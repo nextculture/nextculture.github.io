@@ -1,0 +1,17 @@
+Frame 307 (729 bytes on wire, 729 bytes captured)
+Ethernet II, Src: AsustekC_b7:82:4e (00:23:54:XX:XX:XX), Dst: D-Link_cf:21:98 (00:26:5a:cf:21:98)
+Internet Protocol, Src: 192.168.XXX.XXX (192.168.XXX.XXX), Dst: 69.163.251.211 (69.163.251.211)
+Transmission Control Protocol, Src Port: 57763 (57763), Dst Port: http (80), Seq: 1, Ack: 1, Len: 675
+Hypertext Transfer Protocol
+    GET /img/logo.gif HTTP/1.1\r\n
+    Host: www.abluestar.com\r\n
+    Connection: keep-alive\r\n
+    Cache-Control: no-cache\r\n
+    Pragma: no-cache\r\n
+    Accept: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5\r\n
+    User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/534.10 (KHTML, like Gecko) Chrome/8.0.552.215 Safari/534.10\r\n
+    Accept-Encoding: gzip,deflate,sdch\r\n
+    Accept-Language: en-US,en;q=0.8\r\n
+    Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3\r\n
+    Cookie: __utmz=183688310.1290627547.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utma=183688310.1877426963.1290627547.1292004015.1292005855.3; __utmc=183688310; __utmb=183688310.3.10.1292005855\r\n
+    \r\n

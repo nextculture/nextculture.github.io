@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Restarting</title>
+	</head>
+	<body>
+		<h1>Restarting device</h1>
+		<p>The device is restarting, this may take a few minuets. </p>
+		<p><strong>Status:</strong> <span id='status'>Checking</span></p>
+		<p id='Error'></p>
+	</body>
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+	<script type="text/javascript">
+		function UrlExists(url) {
+			var http = new XMLHttpRequest();
+			http.open('HEAD', url, false);
+			http.send();
+			return http.status!=404;
+		}
+		
+		var checkCount = 0 ; 
+		
+		function CheckServerUp(){
+			checkCount++; 
+			$('#status').text('Checking. ' + checkCount ) ;			
+			if( checkCount > 30 ) {
+				$('#Error').html('The device is taking a long time to reboot, <a href="/refresh2.htm">Click here to continue</a>' + checkCount ) ;
+			}
+			
+			
+			if( UrlExists( "refresh2.htm" ) ) {
+				$('#status').text('Device running, redirecting...') ; 
+				window.location.replace( "/refresh2.htm" );				
+			}
+		};
+		
+		$(document).ready(function(){
+			setInterval( "CheckServerUp()", 1000 );			
+		});
+	</script>
+  </html>

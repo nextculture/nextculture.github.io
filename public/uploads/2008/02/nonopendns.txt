@@ -1,0 +1,38 @@
+No.     Time        Source                Destination           Protocol Info
+      1 0.000000    192.168.1.106         75.154.133.68         DNS      Standard query A www.xxxxxxxxxxnothere3.com
+
+Frame 1 (86 bytes on wire, 86 bytes captured)
+Ethernet II, Src: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc), Dst: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+Internet Protocol, Src: 192.168.1.106 (192.168.1.106), Dst: 75.154.133.68 (75.154.133.68)
+User Datagram Protocol, Src Port: 49808 (49808), Dst Port: domain (53)
+Domain Name System (query)
+    [Response In: 2]
+    Transaction ID: 0xeb6a
+    Flags: 0x0100 (Standard query)
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        www.xxxxxxxxxxnothere3.com: type A, class IN
+
+No.     Time        Source                Destination           Protocol Info
+      2 0.413899    75.154.133.68         192.168.1.106         DNS      Standard query response, No such name
+
+Frame 2 (159 bytes on wire, 159 bytes captured)
+Ethernet II, Src: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8), Dst: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+Internet Protocol, Src: 75.154.133.68 (75.154.133.68), Dst: 192.168.1.106 (192.168.1.106)
+User Datagram Protocol, Src Port: domain (53), Dst Port: 49808 (49808)
+Domain Name System (response)
+    [Request In: 1]
+    [Time: 0.413899000 seconds]
+    Transaction ID: 0xeb6a
+    Flags: 0x8183 (Standard query response, No such name)
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 1
+    Additional RRs: 0
+    Queries
+        www.xxxxxxxxxxnothere3.com: type A, class IN
+    Authoritative nameservers
+        com: type SOA, class IN, mname a.gtld-servers.net

@@ -1,0 +1,20 @@
+[Initial Question]:
+(5:38 pm) [System] Customer has entered chat and is waiting for an agent.
+(5:39 pm) [Tyler K.] Hi, thank you for contacting HostGator. My name is Tyler, and I will be assisting you today. How may I help you?
+(5:43 pm) [==ME==]: you sent me my password as PLAIN text instead of a link to reset the password. That a very bad thing ! If/WHEN you get hacked my password will be avaliable to the hacker to use on other websites. Have you not heard of MD5 hashing?
+(5:44 pm) [Tyler K.] Unfortunately, most of our customers wouldn't be able to decrypt an MD5 hash.
+(5:45 pm) [==ME==]: Why do you store my billing password in plain text ?
+(5:45 pm) [Tyler K.] However, our emails are encrypted.
+(5:45 pm) [==ME==]: Well of cource no one can decode a md5 hash, 
+(5:45 pm) [==ME==]: thats the point !
+(5:45 pm) [Tyler K.] And sent from a secure server.
+(5:45 pm) [==ME==]: secure my ass, you will get hacked just like everyone else.
+(5:46 pm) [==ME==]: and i want to limit my risk when you do
+(5:46 pm) [==ME==]: either way, is there someone more Techy that i can contact to complain about the plain text password ?
+(5:46 pm) [==ME==]: info for your reference http://plaintextoffenders.com/about/
+(5:47 pm) [Tyler K.] Unfortunately not.
+(5:47 pm) [Tyler K.] I know exactly what you are talking about, and there is no way to change the way the password is delivered unfortunately.
+(5:48 pm) [==ME==]: your secuirty pracices are laughable, i am glad that i don't store my credit card info on your servers.... I am disapointed about this... 
+(5:49 pm) [Tyler K.] No problem.
+(5:49 pm) [Tyler K.] Is there anything else I can do for you?
+(5:49 pm) [==ME==]: Nope

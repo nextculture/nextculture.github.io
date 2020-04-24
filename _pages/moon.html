@@ -1,0 +1,68 @@
+<!-- 
+    Updates an animated icon in the url bar. Just playing around with javascript. 
+
+    Created on: 2019-Aug-31 
+    Created by: Steven Smethurst @funvill
+-->
+<html>
+    <head>
+        <title>Mooon!</title>
+        <meta charset='utf-8' />
+        <style>
+            #emoji {
+                font-size: 1000%;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -25px;
+                margin-left: -50px;
+            }
+            .container {
+                width: 100%;
+                height: auto;
+                bottom: 0px;
+                top: 0px;
+                left: 0;
+                position: absolute;
+            }
+            #content {                
+                color:darkgray; 
+                word-break: break-all;
+            }
+        </style>
+
+</head>
+<body>
+    <div class='container'>
+        <div id='emoji'>🌔</div>
+        <div id='content'></div>
+    </div>
+
+    <script>
+        /* Source: http://matthewrayfield.com/articles/animating-urls-with-javascript-and-emojis/#%F0%9F%8C%9D */
+        var f = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘'];
+        function loop() {
+            location.hash = f[Math.floor((Date.now()/100)%f.length)];
+            document.getElementById('emoji').innerHTML = f[Math.floor((Date.now()/100)%f.length)]
+            
+            setTimeout(loop, 50);
+        }
+        loop();
+
+        // Print the word moon to the background. 
+        function moon() {
+            for( var offset = 2 ; offset < 1000 ; offset++) {
+                var randomOLength = Math.floor(Math.random() * (+20 - +2)) + +2
+
+                document.getElementById('content').innerHTML += " M"
+                for( var Ow = 0 ; Ow < randomOLength ; Ow++) {
+                    document.getElementById('content').innerHTML += "o"
+                }
+                document.getElementById('content').innerHTML += "n"                    
+            }
+        }
+        moon();
+    </script>
+</body>
+</html>    

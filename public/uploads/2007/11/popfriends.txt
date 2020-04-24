@@ -1,0 +1,169 @@
+<?php
+// Application: comp1920
+// File: popFriends.php  
+// Description: 
+// 
+
+function dump_to_file( $dump_file, $contents ) {
+    $file = fopen( $dump_file, "w" );
+    if( $file == FALSE ) {
+        echo "Error could not open file for write file=[". $dump_file ."]" ;
+        return ;
+    }
+
+    if (fwrite($file, $contents) === FALSE) {
+        echo "Cannot write to file ($file)";
+        return ;
+    }    
+    fclose($file);
+}
+
+// Include the Facebook php API 
+// The API can be downloaded from facebook's website. http://developers.facebook.com/resources.php 
+require_once 'facebook.php';
+
+// These are settings that are given to you when you register your applcation. 
+// ToDo: Change these setting to match the ones found on your 
+//		 My Applcation page http://www.facebook.com/developers/apps.php 
+$appapikey = '2e88e475fc9cfe408fe1b91e6a0dfb6e';
+$appsecret = 'eb4755064f873d1aa55419ed5272759f';
+
+// Create an instance of the facebook class. 
+$facebook = new Facebook($appapikey, $appsecret);
+
+// attempt to log in to facebook
+// We will attemp to log in as the current user, 
+$user = $facebook->require_login();
+
+// The call back url for all internal links on this page.
+$appcallbackurl = 'http://www.abluestar.com/dev/facebook/';
+
+// catch the exception that gets thrown if the cookie has an invalid session_key in it
+try {
+if (!$facebook->api_client->users_isAppAdded()) {
+		$facebook->redirect($facebook->get_add_url());
+	}
+} catch (Exception $ex) {
+	// this will clear cookies for your application and 
+	// redirect them to a login prompt
+	$facebook->set_user(null, null);
+	$facebook->redirect($appcallbackurl);
+	die( "can not load facebook class" ); 
+}	
+
+echo "<p>hello $user</p>";
+
+// Get a list of all your friends 
+// This list can be returned in a serveral different formats including XML, 
+// The friends_get converts the XML response in to an array for me and returns it. 
+// If there was an error, friends would be set to false.
+
+// Example response 
+/**  
+<?xml version="1.0" encoding="UTF-8"?>
+<friends_get_response xmlns="http://api.facebook.com/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.facebook.com/1.0/ http://api.facebook.com/1.0/facebook.xsd" list="true">
+	<uid>21005955</uid>
+	<uid>129500593</uid>
+	<uid>305200581</uid>
+</friends_get_response>	
+*/   
+$friends = $facebook->api_client->friends_get();
+if( $friends == FALSE ) {
+	die( "could not retive this users friends list" ); 
+}
+
+// Get the names of all my friends by there UID numbers 
+// We generate a request for all your friends names. 
+// We could request each users names one by one or we can save some time and some DB resources by 
+//	requesting all our friends names in one big request. 
+$uids1 = '';
+foreach( $friends as $friend ) {
+	$uids1 .= $friend .", ";
+}
+$uids1 .= "0"; 
+
+// Make the request for a users information. 
+// You must be able to see this users information from your account. 
+// Unless you are all ready friends you will not be able to get there name. 
+$users_getInfo = $facebook->api_client->users_getInfo( $uids1, "name" ); 
+
+// Example response 
+// 
+/*
+<?xml version="1.0" encoding="UTF-8"?>
+<users_getInfo_response xmlns="http://api.facebook.com/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.facebook.com/1.0/ http://api.facebook.com/1.0/facebook.xsd" list="true">
+	<user>
+		<uid>732945108</uid>
+		<name>Peter Dillon</name>
+	</user>
+</users_getInfo_response>
+*/
+
+// Re orginze the data in to a useable format. 
+$Offset = 0 ;
+foreach( $friends as $friend ) {
+	$Names[$friend] = $users_getInfo[$Offset++]['name'] ; 
+}
+
+
+// Query each user with every other user in your friends list and check to see if they are friends. 
+// There will be n*n queries to the database, this will take the bulk of the proccess time. 
+
+
+// Get the popularity between my friends 
+foreach( $friends as $friend ) {
+	$yourFriends[$friend] = 0 ; // Set the initial count of friends to zero 
+	$uids1 = ''; // Set the inial query line to nothing. 
+	$uids2 = ''; // Set the inial query line to nothing. 
+	
+	foreach( $friends as $friend2 ) {
+		if( $friend == $friend2 ) {
+			continue; 
+		}
+		$uids1 .= $friend . ", "; 
+		$uids2 .= $friend2 . ", "; 
+	}	
+	$uids1 .= '0';
+	$uids2 .= '0';	
+	
+	
+	// We want to check if two my friends are friends with each other. 
+	// to do this we use the friends_areFriends function that returns a bool if they are friends. 	
+	
+	// Example response 
+	// http://wiki.developers.facebook.com/index.php/Friends.areFriends
+	/**
+	<?xml version="1.0" encoding="UTF-8"?>
+	<friends_areFriends_response xmlns="http://api.facebook.com/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.facebook.com/1.0/ http://api.facebook.com/1.0/facebook.xsd" list="true">
+		<friend_info>
+			<uid1>510848501</uid1>
+			<uid2>504905428</uid2>
+			<are_friends>0</are_friends>
+		</friend_info>
+	</friends_areFriends_response>	
+	*/
+	
+	$friends_areFriends = $facebook->api_client->friends_areFriends( $uids1, $uids2 ); 
+	
+	// Re orginze the data in to a more useable format.
+	$Offset = 0 ; 
+	foreach( $friends as $friend2 ) {
+		if( $friend == $friend2 ) {
+			continue; 
+		}		
+		if( $friends_areFriends[$Offset++]["are_friends"] == '1' ) {
+			$yourFriends[$friend]++; 
+		}
+	}
+	
+}
+
+// array_combine — Creates an array by using one array for keys and another for its values
+// Sort the list by the number of commen friends then display the list with the friends name instead of there ID.
+echo "<hr><pre>";
+arsort( $yourFriends ) ; 
+$friendsIds = array_keys( $yourFriends ); 
+foreach ( $friendsIds as $Id ) {
+	echo "<a href='http://www.facebook.com/profile.php?id=". $Id ."'>". $Names[$Id] . "</a>: " .$yourFriends[ $Id ] . "\n"; 
+}
+echo "</pre>";

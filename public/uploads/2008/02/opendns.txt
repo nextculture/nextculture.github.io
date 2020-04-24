@@ -1,0 +1,1083 @@
+No.     Time        Source                Destination           Protocol Info
+      1 0.000000    66.249.83.109         192.168.1.106         TCP      pop3s > 51728 [RST] Seq=1 Win=9300 Len=0
+
+Frame 1 (60 bytes on wire, 60 bytes captured)
+Ethernet II, Src: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8), Dst: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+    Destination: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+    Trailer: 00007C730A8E
+Internet Protocol, Src: 66.249.83.109 (66.249.83.109), Dst: 192.168.1.106 (192.168.1.106)
+Transmission Control Protocol, Src Port: pop3s (995), Dst Port: 51728 (51728), Seq: 1, Len: 0
+    Source port: pop3s (995)
+    Destination port: 51728 (51728)
+    Sequence number: 1    (relative sequence number)
+    Acknowledgment number: Broken TCP. The acknowledge field is nonzero while the ACK flag is not set
+    Header length: 20 bytes
+    Flags: 0x04 (RST)
+    Window size: 9300
+    Checksum: 0x0b49 [correct]
+
+0000  00 1b 24 4d 2e fc 00 0c 41 3a 27 b8 08 00 45 00   ..$M....A:'...E.
+0010  00 28 a2 56 00 00 f5 06 cb 00 42 f9 53 6d c0 a8   .(.V......B.Sm..
+0020  01 6a 03 e3 ca 10 b5 78 89 8f 7b c6 9f 08 50 04   .j.....x..{...P.
+0030  24 54 0b 49 00 00 00 00 7c 73 0a 8e               $T.I....|s..
+
+No.     Time        Source                Destination           Protocol Info
+      2 1.894098    192.168.1.106         208.67.222.222        DNS      Standard query A xxxxxxxxxxnothere.com
+
+Frame 2 (81 bytes on wire, 81 bytes captured)
+Ethernet II, Src: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc), Dst: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+    Destination: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 192.168.1.106 (192.168.1.106), Dst: 208.67.222.222 (208.67.222.222)
+User Datagram Protocol, Src Port: 49801 (49801), Dst Port: domain (53)
+Domain Name System (query)
+    [Response In: 3]
+    Transaction ID: 0xbe66
+    Flags: 0x0100 (Standard query)
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        xxxxxxxxxxnothere.com: type A, class IN
+
+0000  00 0c 41 3a 27 b8 00 1b 24 4d 2e fc 08 00 45 00   ..A:'...$M....E.
+0010  00 43 52 93 00 00 80 11 76 e2 c0 a8 01 6a d0 43   .CR.....v....j.C
+0020  de de c2 89 00 35 00 2f e1 5c be 66 01 00 00 01   .....5./.\.f....
+0030  00 00 00 00 00 00 11 78 78 78 78 78 78 78 78 78   .......xxxxxxxxx
+0040  78 6e 6f 74 68 65 72 65 03 63 6f 6d 00 00 01 00   xnothere.com....
+0050  01                                                .
+
+No.     Time        Source                Destination           Protocol Info
+      3 2.263679    208.67.222.222        192.168.1.106         DNS      Standard query response A 208.67.217.130
+
+Frame 3 (97 bytes on wire, 97 bytes captured)
+Ethernet II, Src: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8), Dst: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+    Destination: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 208.67.222.222 (208.67.222.222), Dst: 192.168.1.106 (192.168.1.106)
+User Datagram Protocol, Src Port: domain (53), Dst Port: 49801 (49801)
+Domain Name System (response)
+    [Request In: 2]
+    [Time: 0.369581000 seconds]
+    Transaction ID: 0xbe66
+    Flags: 0x8180 (Standard query response, No error)
+    Questions: 1
+    Answer RRs: 1
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        xxxxxxxxxxnothere.com: type A, class IN
+    Answers
+        xxxxxxxxxxnothere.com: type A, class IN, addr 208.67.217.130
+
+0000  00 1b 24 4d 2e fc 00 0c 41 3a 27 b8 08 00 45 00   ..$M....A:'...E.
+0010  00 53 00 00 40 00 34 11 d5 65 d0 43 de de c0 a8   .S..@.4..e.C....
+0020  01 6a 00 35 c2 89 00 3f 87 51 be 66 81 80 00 01   .j.5...?.Q.f....
+0030  00 01 00 00 00 00 11 78 78 78 78 78 78 78 78 78   .......xxxxxxxxx
+0040  78 6e 6f 74 68 65 72 65 03 63 6f 6d 00 00 01 00   xnothere.com....
+0050  01 c0 0c 00 01 00 01 00 00 00 00 00 04 d0 43 d9   ..............C.
+0060  82                                                .
+
+No.     Time        Source                Destination           Protocol Info
+      4 2.264780    192.168.1.106         208.67.217.130        TCP      51733 > http [SYN] Seq=0 Win=8192 Len=0 MSS=1456 WS=2
+
+Frame 4 (66 bytes on wire, 66 bytes captured)
+Ethernet II, Src: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc), Dst: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+    Destination: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 192.168.1.106 (192.168.1.106), Dst: 208.67.217.130 (208.67.217.130)
+Transmission Control Protocol, Src Port: 51733 (51733), Dst Port: http (80), Seq: 0, Len: 0
+    Source port: 51733 (51733)
+    Destination port: http (80)
+    Sequence number: 0    (relative sequence number)
+    Header length: 32 bytes
+    Flags: 0x02 (SYN)
+    Window size: 8192
+    Checksum: 0x8707 [correct]
+    Options: (12 bytes)
+
+0000  00 0c 41 3a 27 b8 00 1b 24 4d 2e fc 08 00 45 00   ..A:'...$M....E.
+0010  00 34 52 94 40 00 80 06 3c 57 c0 a8 01 6a d0 43   .4R.@...<W...j.C
+0020  d9 82 ca 15 00 50 e0 22 b1 b1 00 00 00 00 80 02   .....P."........
+0030  20 00 87 07 00 00 02 04 05 b0 01 03 03 02 01 01    ...............
+0040  04 02                                             ..
+
+No.     Time        Source                Destination           Protocol Info
+      5 2.637006    208.67.217.130        192.168.1.106         TCP      http > 51733 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 WS=1
+
+Frame 5 (66 bytes on wire, 66 bytes captured)
+Ethernet II, Src: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8), Dst: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+    Destination: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 208.67.217.130 (208.67.217.130), Dst: 192.168.1.106 (192.168.1.106)
+Transmission Control Protocol, Src Port: http (80), Dst Port: 51733 (51733), Seq: 0, Ack: 1, Len: 0
+    Source port: http (80)
+    Destination port: 51733 (51733)
+    Sequence number: 0    (relative sequence number)
+    Acknowledgement number: 1    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x12 (SYN, ACK)
+    Window size: 65535
+    Checksum: 0x61f0 [correct]
+    Options: (12 bytes)
+    [SEQ/ACK analysis]
+
+0000  00 1b 24 4d 2e fc 00 0c 41 3a 27 b8 08 00 45 00   ..$M....A:'...E.
+0010  00 34 d5 27 40 00 34 06 05 c4 d0 43 d9 82 c0 a8   .4.'@.4....C....
+0020  01 6a 00 50 ca 15 90 54 b5 af e0 22 b1 b2 80 12   .j.P...T..."....
+0030  ff ff 61 f0 00 00 02 04 05 b4 01 03 03 01 04 02   ..a.............
+0040  00 00                                             ..
+
+No.     Time        Source                Destination           Protocol Info
+      6 2.637254    192.168.1.106         208.67.217.130        TCP      51733 > http [ACK] Seq=1 Ack=1 Win=66976 Len=0
+
+Frame 6 (54 bytes on wire, 54 bytes captured)
+Ethernet II, Src: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc), Dst: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+    Destination: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 192.168.1.106 (192.168.1.106), Dst: 208.67.217.130 (208.67.217.130)
+Transmission Control Protocol, Src Port: 51733 (51733), Dst Port: http (80), Seq: 1, Ack: 1, Len: 0
+    Source port: 51733 (51733)
+    Destination port: http (80)
+    Sequence number: 1    (relative sequence number)
+    Acknowledgement number: 1    (relative ack number)
+    Header length: 20 bytes
+    Flags: 0x10 (ACK)
+    Window size: 66976 (scaled)
+    Checksum: 0x6053 [correct]
+    [SEQ/ACK analysis]
+
+0000  00 0c 41 3a 27 b8 00 1b 24 4d 2e fc 08 00 45 00   ..A:'...$M....E.
+0010  00 28 52 95 40 00 80 06 3c 62 c0 a8 01 6a d0 43   .(R.@...<b...j.C
+0020  d9 82 ca 15 00 50 e0 22 b1 b2 90 54 b5 b0 50 10   .....P."...T..P.
+0030  41 68 60 53 00 00                                 Ah`S..
+
+No.     Time        Source                Destination           Protocol Info
+      7 2.637495    192.168.1.106         208.67.217.130        HTTP     GET / HTTP/1.1
+
+Frame 7 (469 bytes on wire, 469 bytes captured)
+Ethernet II, Src: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc), Dst: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+    Destination: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 192.168.1.106 (192.168.1.106), Dst: 208.67.217.130 (208.67.217.130)
+Transmission Control Protocol, Src Port: 51733 (51733), Dst Port: http (80), Seq: 1, Ack: 1, Len: 415
+    Source port: 51733 (51733)
+    Destination port: http (80)
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 416    (relative sequence number)]
+    Acknowledgement number: 1    (relative ack number)
+    Header length: 20 bytes
+    Flags: 0x18 (PSH, ACK)
+    Window size: 66976 (scaled)
+    Checksum: 0xcedf [correct]
+Hypertext Transfer Protocol
+    GET / HTTP/1.1\r\n
+    Host: xxxxxxxxxxnothere.com\r\n
+    User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.12) Gecko/20080201 Firefox/2.0.0.12\r\n
+    Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5\r\n
+    Accept-Language: en-us,en;q=0.5\r\n
+    Accept-Encoding: gzip,deflate\r\n
+    Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7\r\n
+    Keep-Alive: 300\r\n
+    Connection: keep-alive\r\n
+    \r\n
+
+0000  00 0c 41 3a 27 b8 00 1b 24 4d 2e fc 08 00 45 00   ..A:'...$M....E.
+0010  01 c7 52 96 40 00 80 06 3a c2 c0 a8 01 6a d0 43   ..R.@...:....j.C
+0020  d9 82 ca 15 00 50 e0 22 b1 b2 90 54 b5 b0 50 18   .....P."...T..P.
+0030  41 68 ce df 00 00 47 45 54 20 2f 20 48 54 54 50   Ah....GET / HTTP
+0040  2f 31 2e 31 0d 0a 48 6f 73 74 3a 20 78 78 78 78   /1.1..Host: xxxx
+0050  78 78 78 78 78 78 6e 6f 74 68 65 72 65 2e 63 6f   xxxxxxnothere.co
+0060  6d 0d 0a 55 73 65 72 2d 41 67 65 6e 74 3a 20 4d   m..User-Agent: M
+0070  6f 7a 69 6c 6c 61 2f 35 2e 30 20 28 57 69 6e 64   ozilla/5.0 (Wind
+0080  6f 77 73 3b 20 55 3b 20 57 69 6e 64 6f 77 73 20   ows; U; Windows 
+0090  4e 54 20 36 2e 30 3b 20 65 6e 2d 55 53 3b 20 72   NT 6.0; en-US; r
+00a0  76 3a 31 2e 38 2e 31 2e 31 32 29 20 47 65 63 6b   v:1.8.1.12) Geck
+00b0  6f 2f 32 30 30 38 30 32 30 31 20 46 69 72 65 66   o/20080201 Firef
+00c0  6f 78 2f 32 2e 30 2e 30 2e 31 32 0d 0a 41 63 63   ox/2.0.0.12..Acc
+00d0  65 70 74 3a 20 74 65 78 74 2f 78 6d 6c 2c 61 70   ept: text/xml,ap
+00e0  70 6c 69 63 61 74 69 6f 6e 2f 78 6d 6c 2c 61 70   plication/xml,ap
+00f0  70 6c 69 63 61 74 69 6f 6e 2f 78 68 74 6d 6c 2b   plication/xhtml+
+0100  78 6d 6c 2c 74 65 78 74 2f 68 74 6d 6c 3b 71 3d   xml,text/html;q=
+0110  30 2e 39 2c 74 65 78 74 2f 70 6c 61 69 6e 3b 71   0.9,text/plain;q
+0120  3d 30 2e 38 2c 69 6d 61 67 65 2f 70 6e 67 2c 2a   =0.8,image/png,*
+0130  2f 2a 3b 71 3d 30 2e 35 0d 0a 41 63 63 65 70 74   /*;q=0.5..Accept
+0140  2d 4c 61 6e 67 75 61 67 65 3a 20 65 6e 2d 75 73   -Language: en-us
+0150  2c 65 6e 3b 71 3d 30 2e 35 0d 0a 41 63 63 65 70   ,en;q=0.5..Accep
+0160  74 2d 45 6e 63 6f 64 69 6e 67 3a 20 67 7a 69 70   t-Encoding: gzip
+0170  2c 64 65 66 6c 61 74 65 0d 0a 41 63 63 65 70 74   ,deflate..Accept
+0180  2d 43 68 61 72 73 65 74 3a 20 49 53 4f 2d 38 38   -Charset: ISO-88
+0190  35 39 2d 31 2c 75 74 66 2d 38 3b 71 3d 30 2e 37   59-1,utf-8;q=0.7
+01a0  2c 2a 3b 71 3d 30 2e 37 0d 0a 4b 65 65 70 2d 41   ,*;q=0.7..Keep-A
+01b0  6c 69 76 65 3a 20 33 30 30 0d 0a 43 6f 6e 6e 65   live: 300..Conne
+01c0  63 74 69 6f 6e 3a 20 6b 65 65 70 2d 61 6c 69 76   ction: keep-aliv
+01d0  65 0d 0a 0d 0a                                    e....
+
+No.     Time        Source                Destination           Protocol Info
+      8 3.027090    208.67.217.130        192.168.1.106         HTTP     HTTP/1.1 302 Found
+
+Frame 8 (301 bytes on wire, 301 bytes captured)
+Ethernet II, Src: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8), Dst: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+    Destination: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 208.67.217.130 (208.67.217.130), Dst: 192.168.1.106 (192.168.1.106)
+Transmission Control Protocol, Src Port: http (80), Dst Port: 51733 (51733), Seq: 1, Ack: 416, Len: 247
+    Source port: http (80)
+    Destination port: 51733 (51733)
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 248    (relative sequence number)]
+    Acknowledgement number: 416    (relative ack number)
+    Header length: 20 bytes
+    Flags: 0x18 (PSH, ACK)
+    Window size: 66976 (scaled)
+    Checksum: 0xa728 [correct]
+    [SEQ/ACK analysis]
+Hypertext Transfer Protocol
+    HTTP/1.1 302 Found\r\n
+    X-Powered-By: PHP/5.2.5\r\n
+    Location: http://guide.opendns.com/?url=xxxxxxxxxxnothere.com\r\n
+    Content-type: text/html\r\n
+    Transfer-Encoding: chunked\r\n
+    Connection: close\r\n
+    Date: Wed, 27 Feb 2008 00:35:35 GMT\r\n
+    Server: OpenDNS Guide\r\n
+    \r\n
+    HTTP chunked response
+
+0000  00 1b 24 4d 2e fc 00 0c 41 3a 27 b8 08 00 45 00   ..$M....A:'...E.
+0010  01 1f d7 1e 40 00 34 06 02 e2 d0 43 d9 82 c0 a8   ....@.4....C....
+0020  01 6a 00 50 ca 15 90 54 b5 b0 e0 22 b3 51 50 18   .j.P...T...".QP.
+0030  82 d0 a7 28 00 00 48 54 54 50 2f 31 2e 31 20 33   ...(..HTTP/1.1 3
+0040  30 32 20 46 6f 75 6e 64 0d 0a 58 2d 50 6f 77 65   02 Found..X-Powe
+0050  72 65 64 2d 42 79 3a 20 50 48 50 2f 35 2e 32 2e   red-By: PHP/5.2.
+0060  35 0d 0a 4c 6f 63 61 74 69 6f 6e 3a 20 68 74 74   5..Location: htt
+0070  70 3a 2f 2f 67 75 69 64 65 2e 6f 70 65 6e 64 6e   p://guide.opendn
+0080  73 2e 63 6f 6d 2f 3f 75 72 6c 3d 78 78 78 78 78   s.com/?url=xxxxx
+0090  78 78 78 78 78 6e 6f 74 68 65 72 65 2e 63 6f 6d   xxxxxnothere.com
+00a0  0d 0a 43 6f 6e 74 65 6e 74 2d 74 79 70 65 3a 20   ..Content-type: 
+00b0  74 65 78 74 2f 68 74 6d 6c 0d 0a 54 72 61 6e 73   text/html..Trans
+00c0  66 65 72 2d 45 6e 63 6f 64 69 6e 67 3a 20 63 68   fer-Encoding: ch
+00d0  75 6e 6b 65 64 0d 0a 43 6f 6e 6e 65 63 74 69 6f   unked..Connectio
+00e0  6e 3a 20 63 6c 6f 73 65 0d 0a 44 61 74 65 3a 20   n: close..Date: 
+00f0  57 65 64 2c 20 32 37 20 46 65 62 20 32 30 30 38   Wed, 27 Feb 2008
+0100  20 30 30 3a 33 35 3a 33 35 20 47 4d 54 0d 0a 53    00:35:35 GMT..S
+0110  65 72 76 65 72 3a 20 4f 70 65 6e 44 4e 53 20 47   erver: OpenDNS G
+0120  75 69 64 65 0d 0a 0d 0a 30 0d 0a 0d 0a            uide....0....
+
+No.     Time        Source                Destination           Protocol Info
+      9 3.027098    208.67.217.130        192.168.1.106         TCP      http > 51733 [FIN, ACK] Seq=248 Ack=416 Win=66976 Len=0
+
+Frame 9 (60 bytes on wire, 60 bytes captured)
+Ethernet II, Src: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8), Dst: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+    Destination: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+    Trailer: 00007251885F
+Internet Protocol, Src: 208.67.217.130 (208.67.217.130), Dst: 192.168.1.106 (192.168.1.106)
+Transmission Control Protocol, Src Port: http (80), Dst Port: 51733 (51733), Seq: 248, Ack: 416, Len: 0
+    Source port: http (80)
+    Destination port: 51733 (51733)
+    Sequence number: 248    (relative sequence number)
+    Acknowledgement number: 416    (relative ack number)
+    Header length: 20 bytes
+    Flags: 0x11 (FIN, ACK)
+    Window size: 66976 (scaled)
+    Checksum: 0x1c54 [correct]
+
+0000  00 1b 24 4d 2e fc 00 0c 41 3a 27 b8 08 00 45 00   ..$M....A:'...E.
+0010  00 28 d7 21 40 00 34 06 03 d6 d0 43 d9 82 c0 a8   .(.!@.4....C....
+0020  01 6a 00 50 ca 15 90 54 b6 a7 e0 22 b3 51 50 11   .j.P...T...".QP.
+0030  82 d0 1c 54 00 00 00 00 72 51 88 5f               ...T....rQ._
+
+No.     Time        Source                Destination           Protocol Info
+     10 3.027332    192.168.1.106         208.67.217.130        TCP      51733 > http [ACK] Seq=416 Ack=249 Win=66728 Len=0
+
+Frame 10 (54 bytes on wire, 54 bytes captured)
+Ethernet II, Src: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc), Dst: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+    Destination: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 192.168.1.106 (192.168.1.106), Dst: 208.67.217.130 (208.67.217.130)
+Transmission Control Protocol, Src Port: 51733 (51733), Dst Port: http (80), Seq: 416, Ack: 249, Len: 0
+    Source port: 51733 (51733)
+    Destination port: http (80)
+    Sequence number: 416    (relative sequence number)
+    Acknowledgement number: 249    (relative ack number)
+    Header length: 20 bytes
+    Flags: 0x10 (ACK)
+    Window size: 66728 (scaled)
+    Checksum: 0x5dfa [correct]
+    [SEQ/ACK analysis]
+
+0000  00 0c 41 3a 27 b8 00 1b 24 4d 2e fc 08 00 45 00   ..A:'...$M....E.
+0010  00 28 52 97 40 00 80 06 3c 60 c0 a8 01 6a d0 43   .(R.@...<`...j.C
+0020  d9 82 ca 15 00 50 e0 22 b3 51 90 54 b6 a8 50 10   .....P.".Q.T..P.
+0030  41 2a 5d fa 00 00                                 A*]...
+
+No.     Time        Source                Destination           Protocol Info
+     11 3.027873    192.168.1.106         208.67.217.130        TCP      51733 > http [FIN, ACK] Seq=416 Ack=249 Win=66728 Len=0
+
+Frame 11 (54 bytes on wire, 54 bytes captured)
+Ethernet II, Src: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc), Dst: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+    Destination: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 192.168.1.106 (192.168.1.106), Dst: 208.67.217.130 (208.67.217.130)
+Transmission Control Protocol, Src Port: 51733 (51733), Dst Port: http (80), Seq: 416, Ack: 249, Len: 0
+    Source port: 51733 (51733)
+    Destination port: http (80)
+    Sequence number: 416    (relative sequence number)
+    Acknowledgement number: 249    (relative ack number)
+    Header length: 20 bytes
+    Flags: 0x11 (FIN, ACK)
+    Window size: 66728 (scaled)
+    Checksum: 0x5df9 [correct]
+
+0000  00 0c 41 3a 27 b8 00 1b 24 4d 2e fc 08 00 45 00   ..A:'...$M....E.
+0010  00 28 52 98 40 00 80 06 3c 5f c0 a8 01 6a d0 43   .(R.@...<_...j.C
+0020  d9 82 ca 15 00 50 e0 22 b3 51 90 54 b6 a8 50 11   .....P.".Q.T..P.
+0030  41 2a 5d f9 00 00                                 A*]...
+
+No.     Time        Source                Destination           Protocol Info
+     12 3.051111    192.168.1.106         208.67.222.222        DNS      Standard query A guide.opendns.com
+
+Frame 12 (77 bytes on wire, 77 bytes captured)
+Ethernet II, Src: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc), Dst: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+    Destination: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 192.168.1.106 (192.168.1.106), Dst: 208.67.222.222 (208.67.222.222)
+User Datagram Protocol, Src Port: 49802 (49802), Dst Port: domain (53)
+Domain Name System (query)
+    [Response In: 14]
+    Transaction ID: 0xf766
+    Flags: 0x0100 (Standard query)
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        guide.opendns.com: type A, class IN
+
+0000  00 0c 41 3a 27 b8 00 1b 24 4d 2e fc 08 00 45 00   ..A:'...$M....E.
+0010  00 3f 52 99 00 00 80 11 76 e0 c0 a8 01 6a d0 43   .?R.....v....j.C
+0020  de de c2 8a 00 35 00 2b 2a 89 f7 66 01 00 00 01   .....5.+*..f....
+0030  00 00 00 00 00 00 05 67 75 69 64 65 07 6f 70 65   .......guide.ope
+0040  6e 64 6e 73 03 63 6f 6d 00 00 01 00 01            ndns.com.....
+
+No.     Time        Source                Destination           Protocol Info
+     13 3.399536    208.67.217.130        192.168.1.106         TCP      http > 51733 [ACK] Seq=249 Ack=417 Win=66974 Len=0
+
+Frame 13 (60 bytes on wire, 60 bytes captured)
+Ethernet II, Src: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8), Dst: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+    Destination: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+    Trailer: 0000368DF50C
+Internet Protocol, Src: 208.67.217.130 (208.67.217.130), Dst: 192.168.1.106 (192.168.1.106)
+Transmission Control Protocol, Src Port: http (80), Dst Port: 51733 (51733), Seq: 249, Ack: 417, Len: 0
+    Source port: http (80)
+    Destination port: 51733 (51733)
+    Sequence number: 249    (relative sequence number)
+    Acknowledgement number: 417    (relative ack number)
+    Header length: 20 bytes
+    Flags: 0x10 (ACK)
+    Window size: 66974 (scaled)
+    Checksum: 0x1c54 [correct]
+    [SEQ/ACK analysis]
+
+0000  00 1b 24 4d 2e fc 00 0c 41 3a 27 b8 08 00 45 00   ..$M....A:'...E.
+0010  00 28 d8 4f 40 00 34 06 02 a8 d0 43 d9 82 c0 a8   .(.O@.4....C....
+0020  01 6a 00 50 ca 15 90 54 b6 a8 e0 22 b3 52 50 10   .j.P...T...".RP.
+0030  82 cf 1c 54 00 00 00 00 36 8d f5 0c               ...T....6...
+
+No.     Time        Source                Destination           Protocol Info
+     14 3.417595    208.67.222.222        192.168.1.106         DNS      Standard query response A 208.67.217.131
+
+Frame 14 (93 bytes on wire, 93 bytes captured)
+Ethernet II, Src: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8), Dst: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+    Destination: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 208.67.222.222 (208.67.222.222), Dst: 192.168.1.106 (192.168.1.106)
+User Datagram Protocol, Src Port: domain (53), Dst Port: 49802 (49802)
+Domain Name System (response)
+    [Request In: 12]
+    [Time: 0.366484000 seconds]
+    Transaction ID: 0xf766
+    Flags: 0x8180 (Standard query response, No error)
+    Questions: 1
+    Answer RRs: 1
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        guide.opendns.com: type A, class IN
+    Answers
+        guide.opendns.com: type A, class IN, addr 208.67.217.131
+
+0000  00 1b 24 4d 2e fc 00 0c 41 3a 27 b8 08 00 45 00   ..$M....A:'...E.
+0010  00 4f 00 00 40 00 34 11 d5 69 d0 43 de de c0 a8   .O..@.4..i.C....
+0020  01 6a 00 35 c2 8a 00 3b b1 7d f7 66 81 80 00 01   .j.5...;.}.f....
+0030  00 01 00 00 00 00 05 67 75 69 64 65 07 6f 70 65   .......guide.ope
+0040  6e 64 6e 73 03 63 6f 6d 00 00 01 00 01 c0 0c 00   ndns.com........
+0050  01 00 01 00 00 00 1e 00 04 d0 43 d9 83            ..........C..
+
+No.     Time        Source                Destination           Protocol Info
+     15 3.419490    192.168.1.106         208.67.217.131        TCP      51734 > http [SYN] Seq=0 Win=8192 Len=0 MSS=1456 WS=2
+
+Frame 15 (66 bytes on wire, 66 bytes captured)
+Ethernet II, Src: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc), Dst: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+    Destination: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 192.168.1.106 (192.168.1.106), Dst: 208.67.217.131 (208.67.217.131)
+Transmission Control Protocol, Src Port: 51734 (51734), Dst Port: http (80), Seq: 0, Len: 0
+    Source port: 51734 (51734)
+    Destination port: http (80)
+    Sequence number: 0    (relative sequence number)
+    Header length: 32 bytes
+    Flags: 0x02 (SYN)
+    Window size: 8192
+    Checksum: 0x77eb [correct]
+    Options: (12 bytes)
+
+0000  00 0c 41 3a 27 b8 00 1b 24 4d 2e fc 08 00 45 00   ..A:'...$M....E.
+0010  00 34 52 9a 40 00 80 06 3c 50 c0 a8 01 6a d0 43   .4R.@...<P...j.C
+0020  d9 83 ca 16 00 50 14 09 8c e5 00 00 00 00 80 02   .....P..........
+0030  20 00 77 eb 00 00 02 04 05 b0 01 03 03 02 01 01    .w.............
+0040  04 02                                             ..
+
+No.     Time        Source                Destination           Protocol Info
+     16 3.789617    208.67.217.131        192.168.1.106         TCP      http > 51734 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 WS=1
+
+Frame 16 (66 bytes on wire, 66 bytes captured)
+Ethernet II, Src: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8), Dst: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+    Destination: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 208.67.217.131 (208.67.217.131), Dst: 192.168.1.106 (192.168.1.106)
+Transmission Control Protocol, Src Port: http (80), Dst Port: 51734 (51734), Seq: 0, Ack: 1, Len: 0
+    Source port: http (80)
+    Destination port: 51734 (51734)
+    Sequence number: 0    (relative sequence number)
+    Acknowledgement number: 1    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x12 (SYN, ACK)
+    Window size: 65535
+    Checksum: 0x56b2 [correct]
+    Options: (12 bytes)
+    [SEQ/ACK analysis]
+
+0000  00 1b 24 4d 2e fc 00 0c 41 3a 27 b8 08 00 45 00   ..$M....A:'...E.
+0010  00 34 db ad 40 00 34 06 ff 3c d0 43 d9 83 c0 a8   .4..@.4..<.C....
+0020  01 6a 00 50 ca 16 a0 4b a1 da 14 09 8c e6 80 12   .j.P...K........
+0030  ff ff 56 b2 00 00 02 04 05 b4 01 03 03 01 04 02   ..V.............
+0040  00 00                                             ..
+
+No.     Time        Source                Destination           Protocol Info
+     17 3.789871    192.168.1.106         208.67.217.131        TCP      51734 > http [ACK] Seq=1 Ack=1 Win=66976 Len=0
+
+Frame 17 (54 bytes on wire, 54 bytes captured)
+Ethernet II, Src: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc), Dst: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+    Destination: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 192.168.1.106 (192.168.1.106), Dst: 208.67.217.131 (208.67.217.131)
+Transmission Control Protocol, Src Port: 51734 (51734), Dst Port: http (80), Seq: 1, Ack: 1, Len: 0
+    Source port: 51734 (51734)
+    Destination port: http (80)
+    Sequence number: 1    (relative sequence number)
+    Acknowledgement number: 1    (relative ack number)
+    Header length: 20 bytes
+    Flags: 0x10 (ACK)
+    Window size: 66976 (scaled)
+    Checksum: 0x5515 [correct]
+    [SEQ/ACK analysis]
+
+0000  00 0c 41 3a 27 b8 00 1b 24 4d 2e fc 08 00 45 00   ..A:'...$M....E.
+0010  00 28 52 9b 40 00 80 06 3c 5b c0 a8 01 6a d0 43   .(R.@...<[...j.C
+0020  d9 83 ca 16 00 50 14 09 8c e6 a0 4b a1 db 50 10   .....P.....K..P.
+0030  41 68 55 15 00 00                                 AhU...
+
+No.     Time        Source                Destination           Protocol Info
+     18 3.790108    192.168.1.106         208.67.217.131        HTTP     GET /?url=xxxxxxxxxxnothere.com HTTP/1.1
+
+Frame 18 (1039 bytes on wire, 1039 bytes captured)
+Ethernet II, Src: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc), Dst: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+    Destination: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 192.168.1.106 (192.168.1.106), Dst: 208.67.217.131 (208.67.217.131)
+Transmission Control Protocol, Src Port: 51734 (51734), Dst Port: http (80), Seq: 1, Ack: 1, Len: 985
+    Source port: 51734 (51734)
+    Destination port: http (80)
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 986    (relative sequence number)]
+    Acknowledgement number: 1    (relative ack number)
+    Header length: 20 bytes
+    Flags: 0x18 (PSH, ACK)
+    Window size: 66976 (scaled)
+    Checksum: 0x73fd [correct]
+Hypertext Transfer Protocol
+    GET /?url=xxxxxxxxxxnothere.com HTTP/1.1\r\n
+    Host: guide.opendns.com\r\n
+    User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.12) Gecko/20080201 Firefox/2.0.0.12\r\n
+    Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5\r\n
+    Accept-Language: en-us,en;q=0.5\r\n
+    Accept-Encoding: gzip,deflate\r\n
+    Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7\r\n
+    Keep-Alive: 300\r\n
+    Connection: keep-alive\r\n
+    Cookie: OPENDNS_ACCOUNT=16f7f54a4ba0d90f697fea68f2a153c2; __wst=81b3763d285325f13c86ae6e07be07afd238fd9f; __utma=246498266.1333089127.1204065195.1204065195.1204065195.1; __utmc=246498266; __utmz=246498266.1204065195.1.1.utmccn=(organic)|ut
+    \r\n
+
+0000  00 0c 41 3a 27 b8 00 1b 24 4d 2e fc 08 00 45 00   ..A:'...$M....E.
+0010  04 01 52 9c 40 00 80 06 38 81 c0 a8 01 6a d0 43   ..R.@...8....j.C
+0020  d9 83 ca 16 00 50 14 09 8c e6 a0 4b a1 db 50 18   .....P.....K..P.
+0030  41 68 73 fd 00 00 47 45 54 20 2f 3f 75 72 6c 3d   Ahs...GET /?url=
+0040  78 78 78 78 78 78 78 78 78 78 6e 6f 74 68 65 72   xxxxxxxxxxnother
+0050  65 2e 63 6f 6d 20 48 54 54 50 2f 31 2e 31 0d 0a   e.com HTTP/1.1..
+0060  48 6f 73 74 3a 20 67 75 69 64 65 2e 6f 70 65 6e   Host: guide.open
+0070  64 6e 73 2e 63 6f 6d 0d 0a 55 73 65 72 2d 41 67   dns.com..User-Ag
+0080  65 6e 74 3a 20 4d 6f 7a 69 6c 6c 61 2f 35 2e 30   ent: Mozilla/5.0
+0090  20 28 57 69 6e 64 6f 77 73 3b 20 55 3b 20 57 69    (Windows; U; Wi
+00a0  6e 64 6f 77 73 20 4e 54 20 36 2e 30 3b 20 65 6e   ndows NT 6.0; en
+00b0  2d 55 53 3b 20 72 76 3a 31 2e 38 2e 31 2e 31 32   -US; rv:1.8.1.12
+00c0  29 20 47 65 63 6b 6f 2f 32 30 30 38 30 32 30 31   ) Gecko/20080201
+00d0  20 46 69 72 65 66 6f 78 2f 32 2e 30 2e 30 2e 31    Firefox/2.0.0.1
+00e0  32 0d 0a 41 63 63 65 70 74 3a 20 74 65 78 74 2f   2..Accept: text/
+00f0  78 6d 6c 2c 61 70 70 6c 69 63 61 74 69 6f 6e 2f   xml,application/
+0100  78 6d 6c 2c 61 70 70 6c 69 63 61 74 69 6f 6e 2f   xml,application/
+0110  78 68 74 6d 6c 2b 78 6d 6c 2c 74 65 78 74 2f 68   xhtml+xml,text/h
+0120  74 6d 6c 3b 71 3d 30 2e 39 2c 74 65 78 74 2f 70   tml;q=0.9,text/p
+0130  6c 61 69 6e 3b 71 3d 30 2e 38 2c 69 6d 61 67 65   lain;q=0.8,image
+0140  2f 70 6e 67 2c 2a 2f 2a 3b 71 3d 30 2e 35 0d 0a   /png,*/*;q=0.5..
+0150  41 63 63 65 70 74 2d 4c 61 6e 67 75 61 67 65 3a   Accept-Language:
+0160  20 65 6e 2d 75 73 2c 65 6e 3b 71 3d 30 2e 35 0d    en-us,en;q=0.5.
+0170  0a 41 63 63 65 70 74 2d 45 6e 63 6f 64 69 6e 67   .Accept-Encoding
+0180  3a 20 67 7a 69 70 2c 64 65 66 6c 61 74 65 0d 0a   : gzip,deflate..
+0190  41 63 63 65 70 74 2d 43 68 61 72 73 65 74 3a 20   Accept-Charset: 
+01a0  49 53 4f 2d 38 38 35 39 2d 31 2c 75 74 66 2d 38   ISO-8859-1,utf-8
+01b0  3b 71 3d 30 2e 37 2c 2a 3b 71 3d 30 2e 37 0d 0a   ;q=0.7,*;q=0.7..
+01c0  4b 65 65 70 2d 41 6c 69 76 65 3a 20 33 30 30 0d   Keep-Alive: 300.
+01d0  0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65   .Connection: kee
+01e0  70 2d 61 6c 69 76 65 0d 0a 43 6f 6f 6b 69 65 3a   p-alive..Cookie:
+01f0  20 4f 50 45 4e 44 4e 53 5f 41 43 43 4f 55 4e 54    OPENDNS_ACCOUNT
+0200  3d 31 36 66 37 66 35 34 61 34 62 61 30 64 39 30   =16f7f54a4ba0d90
+0210  66 36 39 37 66 65 61 36 38 66 32 61 31 35 33 63   f697fea68f2a153c
+0220  32 3b 20 5f 5f 77 73 74 3d 38 31 62 33 37 36 33   2; __wst=81b3763
+0230  64 32 38 35 33 32 35 66 31 33 63 38 36 61 65 36   d285325f13c86ae6
+0240  65 30 37 62 65 30 37 61 66 64 32 33 38 66 64 39   e07be07afd238fd9
+0250  66 3b 20 5f 5f 75 74 6d 61 3d 32 34 36 34 39 38   f; __utma=246498
+0260  32 36 36 2e 31 33 33 33 30 38 39 31 32 37 2e 31   266.1333089127.1
+0270  32 30 34 30 36 35 31 39 35 2e 31 32 30 34 30 36   204065195.120406
+0280  35 31 39 35 2e 31 32 30 34 30 36 35 31 39 35 2e   5195.1204065195.
+0290  31 3b 20 5f 5f 75 74 6d 63 3d 32 34 36 34 39 38   1; __utmc=246498
+02a0  32 36 36 3b 20 5f 5f 75 74 6d 7a 3d 32 34 36 34   266; __utmz=2464
+02b0  39 38 32 36 36 2e 31 32 30 34 30 36 35 31 39 35   98266.1204065195
+02c0  2e 31 2e 31 2e 75 74 6d 63 63 6e 3d 28 6f 72 67   .1.1.utmccn=(org
+02d0  61 6e 69 63 29 7c 75 74 6d 63 73 72 3d 67 6f 6f   anic)|utmcsr=goo
+02e0  67 6c 65 7c 75 74 6d 63 74 72 3d 6f 70 65 6e 64   gle|utmctr=opend
+02f0  6e 73 2e 63 6f 6d 7c 75 74 6d 63 6d 64 3d 6f 72   ns.com|utmcmd=or
+0300  67 61 6e 69 63 3b 20 4f 55 4e 3d 56 78 34 62 34   ganic; OUN=Vx4b4
+0310  52 74 49 6d 58 78 52 61 79 57 6e 30 38 31 36 72   RtImXxRayWn0816r
+0320  4b 6b 56 6d 4c 36 25 32 42 61 54 4d 72 64 69 69   KkVmL6%2BaTMrdii
+0330  66 45 25 32 42 55 64 69 72 77 37 72 68 6a 34 4b   fE%2BUdirw7rhj4K
+0340  32 32 75 38 47 5a 4d 52 45 68 47 6f 4d 6c 31 33   22u8GZMREhGoMl13
+0350  6a 54 25 32 46 43 52 72 41 65 38 71 42 65 4e 53   jT%2FCRrAe8qBeNS
+0360  75 74 73 30 54 43 38 4b 34 76 78 69 4f 63 6c 61   uts0TC8K4vxiOcla
+0370  78 67 71 74 39 46 6c 50 63 69 78 6f 6c 74 5a 79   xgqt9FlPcixoltZy
+0380  74 42 77 4a 25 32 42 32 56 31 4e 25 32 46 4e 4e   tBwJ%2B2V1N%2FNN
+0390  72 6d 35 33 69 76 49 54 75 32 71 6f 79 46 70 49   rm53ivITu2qoyFpI
+03a0  25 33 44 3b 20 74 3d 78 2d 31 32 30 34 30 36 35   %3D; t=x-1204065
+03b0  39 31 36 3b 20 4c 50 53 49 44 3d 64 61 32 37 32   916; LPSID=da272
+03c0  32 64 32 2d 31 61 39 61 2d 33 30 64 34 2d 65 35   2d2-1a9a-30d4-e5
+03d0  30 34 2d 62 62 30 61 36 65 36 65 63 65 39 37 3b   04-bb0a6e6ece97;
+03e0  20 4c 50 55 49 44 3d 32 63 64 38 33 32 35 31 2d    LPUID=2cd83251-
+03f0  65 30 61 63 2d 63 62 64 34 2d 61 35 39 35 2d 31   e0ac-cbd4-a595-1
+0400  39 34 37 39 33 39 66 31 39 62 38 0d 0a 0d 0a      947939f19b8....
+
+No.     Time        Source                Destination           Protocol Info
+     19 4.196905    208.67.217.131        192.168.1.106         TCP      [TCP segment of a reassembled PDU]
+
+Frame 19 (1510 bytes on wire, 1510 bytes captured)
+Ethernet II, Src: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8), Dst: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+    Destination: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 208.67.217.131 (208.67.217.131), Dst: 192.168.1.106 (192.168.1.106)
+Transmission Control Protocol, Src Port: http (80), Dst Port: 51734 (51734), Seq: 1, Ack: 986, Len: 1456
+    Source port: http (80)
+    Destination port: 51734 (51734)
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1457    (relative sequence number)]
+    Acknowledgement number: 986    (relative ack number)
+    Header length: 20 bytes
+    Flags: 0x10 (ACK)
+    Window size: 66976 (scaled)
+    Checksum: 0x8ecd [correct]
+    [SEQ/ACK analysis]
+    TCP segment data (1456 bytes)
+
+0000  00 1b 24 4d 2e fc 00 0c 41 3a 27 b8 08 00 45 00   ..$M....A:'...E.
+0010  05 d8 dd d0 40 00 34 06 f7 75 d0 43 d9 83 c0 a8   ....@.4..u.C....
+0020  01 6a 00 50 ca 16 a0 4b a1 db 14 09 90 bf 50 10   .j.P...K......P.
+0030  82 d0 8e cd 00 00 48 54 54 50 2f 31 2e 31 20 32   ......HTTP/1.1 2
+0040  30 30 20 4f 4b 0d 0a 58 2d 50 6f 77 65 72 65 64   00 OK..X-Powered
+0050  2d 42 79 3a 20 50 48 50 2f 35 2e 32 2e 35 0d 0a   -By: PHP/5.2.5..
+0060  43 61 63 68 65 2d 43 6f 6e 74 72 6f 6c 3a 20 6e   Cache-Control: n
+0070  6f 2d 63 61 63 68 65 2c 20 6d 75 73 74 2d 72 65   o-cache, must-re
+0080  76 61 6c 69 64 61 74 65 0d 0a 45 78 70 69 72 65   validate..Expire
+0090  73 3a 20 4d 6f 6e 2c 20 32 36 20 4a 75 6c 20 31   s: Mon, 26 Jul 1
+00a0  39 39 37 20 30 35 3a 30 30 3a 30 30 20 47 4d 54   997 05:00:00 GMT
+00b0  0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20   ..Content-Type: 
+00c0  74 65 78 74 2f 68 74 6d 6c 3b 20 63 68 61 72 73   text/html; chars
+00d0  65 74 3d 75 74 66 2d 38 0d 0a 50 72 61 67 6d 61   et=utf-8..Pragma
+00e0  3a 20 6e 6f 2d 63 61 63 68 65 0d 0a 43 6f 6e 74   : no-cache..Cont
+00f0  65 6e 74 2d 4c 65 6e 67 74 68 3a 20 31 39 37 33   ent-Length: 1973
+0100  0d 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 63 6c   ..Connection: cl
+0110  6f 73 65 0d 0a 44 61 74 65 3a 20 57 65 64 2c 20   ose..Date: Wed, 
+0120  32 37 20 46 65 62 20 32 30 30 38 20 30 30 3a 33   27 Feb 2008 00:3
+0130  32 3a 34 33 20 47 4d 54 0d 0a 53 65 72 76 65 72   2:43 GMT..Server
+0140  3a 20 4f 70 65 6e 44 4e 53 20 47 75 69 64 65 0d   : OpenDNS Guide.
+0150  0a 0d 0a 3c 68 74 6d 6c 3e 0a 09 3c 68 65 61 64   ...<html>..<head
+0160  3e 0a 09 09 3c 74 69 74 6c 65 3e 4f 70 65 6e 44   >...<title>OpenD
+0170  4e 53 3c 2f 74 69 74 6c 65 3e 0a 09 3c 2f 68 65   NS</title>..</he
+0180  61 64 3e 0a 0a 09 3c 62 6f 64 79 20 69 64 3d 22   ad>...<body id="
+0190  6d 61 69 6e 62 6f 64 79 22 20 6f 6e 4c 6f 61 64   mainbody" onLoad
+01a0  3d 22 74 65 73 74 66 6f 72 62 61 6e 6e 65 72 28   ="testforbanner(
+01b0  29 3b 22 20 73 74 79 6c 65 3d 22 6d 61 72 67 69   );" style="margi
+01c0  6e 3a 20 30 70 78 3b 22 3e 0a 09 09 3c 73 63 72   n: 0px;">...<scr
+01d0  69 70 74 20 6c 61 6e 67 75 61 67 65 3d 22 4a 61   ipt language="Ja
+01e0  76 61 53 63 72 69 70 74 22 3e 0a 09 09 09 66 75   vaScript">....fu
+01f0  6e 63 74 69 6f 6e 20 74 65 73 74 66 6f 72 62 61   nction testforba
+0200  6e 6e 65 72 28 29 20 7b 0a 09 09 09 09 76 61 72   nner() {.....var
+0210  20 77 69 64 74 68 3b 0a 09 09 09 09 76 61 72 20    width;.....var 
+0220  68 65 69 67 68 74 3b 0a 09 09 09 09 76 61 72 20   height;.....var 
+0230  78 20 3d 20 30 3b 0a 09 09 09 09 76 61 72 20 69   x = 0;.....var i
+0240  73 62 61 6e 6e 65 72 20 3d 20 66 61 6c 73 65 3b   sbanner = false;
+0250  0a 09 09 09 09 76 61 72 20 62 61 6e 6e 65 72 73   .....var banners
+0260  69 7a 65 73 20 3d 20 6e 65 77 20 41 72 72 61 79   izes = new Array
+0270  28 31 36 29 0a 09 09 09 09 62 61 6e 6e 65 72 73   (16).....banners
+0280  69 7a 65 73 5b 30 5d 20 3d 20 27 33 30 30 78 32   izes[0] = '300x2
+0290  35 30 27 3b 0a 09 09 09 09 62 61 6e 6e 65 72 73   50';.....banners
+02a0  69 7a 65 73 5b 31 5d 20 3d 20 27 32 35 30 78 32   izes[1] = '250x2
+02b0  35 30 27 3b 0a 09 09 09 09 62 61 6e 6e 65 72 73   50';.....banners
+02c0  69 7a 65 73 5b 32 5d 20 3d 20 27 32 34 30 78 34   izes[2] = '240x4
+02d0  30 30 27 3b 0a 09 09 09 09 62 61 6e 6e 65 72 73   00';.....banners
+02e0  69 7a 65 73 5b 33 5d 20 3d 20 27 33 33 36 78 32   izes[3] = '336x2
+02f0  38 30 27 3b 0a 09 09 09 09 62 61 6e 6e 65 72 73   80';.....banners
+0300  69 7a 65 73 5b 34 5d 20 3d 20 27 31 38 30 78 31   izes[4] = '180x1
+0310  35 30 27 3b 0a 09 09 09 09 62 61 6e 6e 65 72 73   50';.....banners
+0320  69 7a 65 73 5b 35 5d 20 3d 20 27 34 36 38 78 36   izes[5] = '468x6
+0330  30 27 3b 0a 09 09 09 09 62 61 6e 6e 65 72 73 69   0';.....bannersi
+0340  7a 65 73 5b 36 5d 20 3d 20 27 32 33 34 78 36 30   zes[6] = '234x60
+0350  27 3b 0a 09 09 09 09 62 61 6e 6e 65 72 73 69 7a   ';.....bannersiz
+0360  65 73 5b 37 5d 20 3d 20 27 38 38 78 33 31 27 3b   es[7] = '88x31';
+0370  0a 09 09 09 09 62 61 6e 6e 65 72 73 69 7a 65 73   .....bannersizes
+0380  5b 38 5d 20 3d 20 27 31 32 30 78 39 30 27 3b 0a   [8] = '120x90';.
+0390  09 09 09 09 62 61 6e 6e 65 72 73 69 7a 65 73 5b   ....bannersizes[
+03a0  39 5d 20 3d 20 27 31 32 30 78 36 30 27 3b 0a 09   9] = '120x60';..
+03b0  09 09 09 62 61 6e 6e 65 72 73 69 7a 65 73 5b 31   ...bannersizes[1
+03c0  30 5d 20 3d 20 27 31 32 30 78 32 34 30 27 3b 0a   0] = '120x240';.
+03d0  09 09 09 09 62 61 6e 6e 65 72 73 69 7a 65 73 5b   ....bannersizes[
+03e0  31 31 5d 20 3d 20 27 31 32 35 78 31 32 35 27 3b   11] = '125x125';
+03f0  0a 09 09 09 09 62 61 6e 6e 65 72 73 69 7a 65 73   .....bannersizes
+0400  5b 31 32 5d 20 3d 20 27 37 32 38 78 39 30 27 3b   [12] = '728x90';
+0410  0a 09 09 09 09 62 61 6e 6e 65 72 73 69 7a 65 73   .....bannersizes
+0420  5b 31 33 5d 20 3d 20 27 31 36 30 78 36 30 30 27   [13] = '160x600'
+0430  3b 0a 09 09 09 09 62 61 6e 6e 65 72 73 69 7a 65   ;.....bannersize
+0440  73 5b 31 34 5d 20 3d 20 27 31 32 30 78 36 30 30   s[14] = '120x600
+0450  27 3b 0a 09 09 09 09 62 61 6e 6e 65 72 73 69 7a   ';.....bannersiz
+0460  65 73 5b 31 36 5d 20 3d 20 27 33 30 30 78 36 30   es[16] = '300x60
+0470  30 27 3b 0a 09 09 09 09 62 61 6e 6e 65 72 73 69   0';.....bannersi
+0480  7a 65 73 5b 31 37 5d 20 3d 20 27 33 30 30 78 31   zes[17] = '300x1
+0490  32 35 27 3b 0a 09 09 09 09 62 61 6e 6e 65 72 73   25';.....banners
+04a0  69 7a 65 73 5b 31 38 5d 20 3d 20 27 35 33 30 78   izes[18] = '530x
+04b0  33 30 30 27 3b 0a 09 09 09 09 62 61 6e 6e 65 72   300';.....banner
+04c0  73 69 7a 65 73 5b 31 39 5d 20 3d 20 27 31 39 30   sizes[19] = '190
+04d0  78 32 30 30 27 3b 0a 09 09 09 09 62 61 6e 6e 65   x200';.....banne
+04e0  72 73 69 7a 65 73 5b 32 30 5d 20 3d 20 27 34 37   rsizes[20] = '47
+04f0  30 78 32 35 30 27 3b 0a 09 09 09 09 69 66 28 74   0x250';.....if(t
+0500  79 70 65 6f 66 28 77 69 6e 64 6f 77 2e 69 6e 6e   ypeof(window.inn
+0510  65 72 48 65 69 67 68 74 29 20 3d 3d 20 27 6e 75   erHeight) == 'nu
+0520  6d 62 65 72 27 29 20 7b 0a 09 09 09 09 09 68 65   mber') {......he
+0530  69 67 68 74 20 3d 20 77 69 6e 64 6f 77 2e 69 6e   ight = window.in
+0540  6e 65 72 48 65 69 67 68 74 3b 0a 09 09 09 09 09   nerHeight;......
+0550  77 69 64 74 68 20 3d 20 77 69 6e 64 6f 77 2e 69   width = window.i
+0560  6e 6e 65 72 57 69 64 74 68 3b 0a 09 09 09 09 7d   nnerWidth;.....}
+0570  20 65 6c 73 65 20 69 66 28 74 79 70 65 6f 66 28    else if(typeof(
+0580  64 6f 63 75 6d 65 6e 74 2e 62 6f 64 79 2e 6f 66   document.body.of
+0590  66 73 65 74 48 65 69 67 68 74 29 20 3d 3d 20 27   fsetHeight) == '
+05a0  6e 75 6d 62 65 72 27 29 20 7b 0a 09 09 09 09 09   number') {......
+05b0  68 65 69 67 68 74 20 3d 20 64 6f 63 75 6d 65 6e   height = documen
+05c0  74 2e 62 6f 64 79 2e 6f 66 66 73 65 74 48 65 69   t.body.offsetHei
+05d0  67 68 74 3b 0a 09 09 09 09 09 77 69 64 74 68 20   ght;......width 
+05e0  3d 20 64 6f 63 75                                 = docu
+
+No.     Time        Source                Destination           Protocol Info
+     20 4.201189    208.67.217.131        192.168.1.106         HTTP     HTTP/1.1 200 OK (text/html)
+
+Frame 20 (856 bytes on wire, 856 bytes captured)
+Ethernet II, Src: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8), Dst: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+    Destination: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        Address: QuantaCo_4d:2e:fc (00:1b:24:4d:2e:fc)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Source: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        Address: Cisco-Li_3a:27:b8 (00:0c:41:3a:27:b8)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+    Type: IP (0x0800)
+Internet Protocol, Src: 208.67.217.131 (208.67.217.131), Dst: 192.168.1.106 (192.168.1.106)
+Transmission Control Protocol, Src Port: http (80), Dst Port: 51734 (51734), Seq: 1457, Ack: 986, Len: 802
+    Source port: http (80)
+    Destination port: 51734 (51734)
+    Sequence number: 1457    (relative sequence number)
+    [Next sequence number: 2259    (relative sequence number)]
+    Acknowledgement number: 986    (relative ack number)
+    Header length: 20 bytes
+    Flags: 0x18 (PSH, ACK)
+    Window size: 66976 (scaled)
+    Checksum: 0x3730 [correct]
+    TCP segment data (802 bytes)
+[Reassembled TCP Segments (2258 bytes): #19(1456), #20(802)]
+Hypertext Transfer Protocol
+    HTTP/1.1 200 OK\r\n
+    X-Powered-By: PHP/5.2.5\r\n
+    Cache-Control: no-cache, must-revalidate\r\n
+    Expires: Mon, 26 Jul 1997 05:00:00 GMT\r\n
+    Content-Type: text/html; charset=utf-8\r\n
+    Pragma: no-cache\r\n
+    Content-Length: 1973
+    Connection: close\r\n
+    Date: Wed, 27 Feb 2008 00:32:43 GMT\r\n
+    Server: OpenDNS Guide\r\n
+    \r\n
+Line-based text data: text/html
+
+Frame (856 bytes):
+
+0000  00 1b 24 4d 2e fc 00 0c 41 3a 27 b8 08 00 45 00   ..$M....A:'...E.
+0010  03 4a dd d1 40 00 34 06 fa 02 d0 43 d9 83 c0 a8   .J..@.4....C....
+0020  01 6a 00 50 ca 16 a0 4b a7 8b 14 09 90 bf 50 18   .j.P...K......P.
+0030  82 d0 37 30 00 00 6d 65 6e 74 2e 62 6f 64 79 2e   ..70..ment.body.
+0040  6f 66 66 73 65 74 57 69 64 74 68 3b 0a 09 09 09   offsetWidth;....
+0050  09 7d 3b 0a 09 09 09 09 66 6f 72 20 28 78 3d 30   .};.....for (x=0
+0060  3b 20 78 3c 62 61 6e 6e 65 72 73 69 7a 65 73 2e   ; x<bannersizes.
+0070  6c 65 6e 67 74 68 3b 20 78 2b 2b 29 20 7b 0a 09   length; x++) {..
+0080  09 09 09 09 69 66 28 62 61 6e 6e 65 72 73 69 7a   ....if(bannersiz
+0090  65 73 5b 78 5d 20 3d 3d 20 77 69 64 74 68 20 2b   es[x] == width +
+00a0  20 27 78 27 20 2b 20 68 65 69 67 68 74 29 20 7b    'x' + height) {
+00b0  0a 09 09 09 09 09 09 69 73 62 61 6e 6e 65 72 20   .......isbanner 
+00c0  3d 20 74 72 75 65 3b 0a 09 09 09 09 09 7d 3b 0a   = true;......};.
+00d0  09 09 09 09 7d 3b 0a 09 09 09 09 69 66 28 69 73   ....};.....if(is
+00e0  62 61 6e 6e 65 72 20 7c 7c 20 77 69 64 74 68 20   banner || width 
+00f0  3c 20 31 30 30 20 7c 7c 20 68 65 69 67 68 74 20   < 100 || height 
+0100  3c 20 31 30 30 29 20 7b 0a 09 09 09 09 09 77 69   < 100) {......wi
+0110  6e 64 6f 77 2e 6c 6f 63 61 74 69 6f 6e 20 3d 20   ndow.location = 
+0120  27 2f 62 27 20 2b 20 27 61 6e 6e 65 72 2e 70 68   '/b' + 'anner.ph
+0130  70 3f 77 3d 27 20 2b 20 77 69 64 74 68 20 2b 20   p?w=' + width + 
+0140  27 26 68 3d 27 20 2b 20 68 65 69 67 68 74 20 2b   '&h=' + height +
+0150  20 27 26 64 3d 78 78 78 78 78 78 78 78 78 78 6e    '&d=xxxxxxxxxxn
+0160  6f 74 68 65 72 65 2e 63 6f 6d 26 75 3d 78 78 78   othere.com&u=xxx
+0170  78 78 78 78 78 78 78 6e 6f 74 68 65 72 65 2e 63   xxxxxxxnothere.c
+0180  6f 6d 26 72 3d 27 3b 0a 09 09 09 09 7d 20 65 6c   om&r=';.....} el
+0190  73 65 20 7b 0a 09 09 09 09 09 76 61 72 20 6d 61   se {......var ma
+01a0  69 6e 62 6f 64 79 20 3d 20 64 6f 63 75 6d 65 6e   inbody = documen
+01b0  74 2e 67 65 74 45 6c 65 6d 65 6e 74 42 79 49 64   t.getElementById
+01c0  28 27 6d 61 69 6e 62 6f 64 79 27 29 3b 0a 09 09   ('mainbody');...
+01d0  09 09 09 6d 61 69 6e 62 6f 64 79 2e 73 74 79 6c   ...mainbody.styl
+01e0  65 2e 6d 61 72 67 69 6e 20 3d 20 27 30 70 78 27   e.margin = '0px'
+01f0  3b 0a 09 09 09 09 09 6d 61 69 6e 62 6f 64 79 2e   ;......mainbody.
+0200  73 63 72 6f 6c 6c 20 3d 20 27 6e 6f 27 3b 0a 09   scroll = 'no';..
+0210  09 09 09 09 6d 61 69 6e 62 6f 64 79 2e 69 6e 6e   ....mainbody.inn
+0220  65 72 48 54 4d 4c 20 3d 20 27 3c 69 66 72 61 6d   erHTML = '<ifram
+0230  65 20 66 72 61 6d 65 62 6f 72 64 65 72 3d 22 30   e frameborder="0
+0240  22 20 73 72 63 3d 22 2f 63 6f 6e 74 72 6f 6c 6c   " src="/controll
+0250  65 72 2e 70 68 70 3f 75 72 6c 3d 78 78 78 78 78   er.php?url=xxxxx
+0260  78 78 78 78 78 6e 6f 74 68 65 72 65 2e 63 6f 6d   xxxxxnothere.com
+0270  26 72 65 66 3d 22 20 77 69 64 74 68 3d 22 31 30   &ref=" width="10
+0280  30 25 22 20 68 65 69 67 68 74 3d 22 31 30 30 25   0%" height="100%
+0290  22 3e 3c 2f 69 66 72 61 6d 65 3e 27 3b 0a 09 09   "></iframe>';...
+02a0  09 09 7d 3b 0a 09 09 09 7d 3b 0a 09 09 3c 2f 73   ..};....};...</s
+02b0  63 72 69 70 74 3e 0a 09 09 3c 6e 6f 73 63 72 69   cript>...<noscri
+02c0  70 74 3e 0a 09 09 09 3c 69 66 72 61 6d 65 20 66   pt>....<iframe f
+02d0  72 61 6d 65 62 6f 72 64 65 72 3d 22 30 22 20 73   rameborder="0" s
+02e0  72 63 3d 22 2f 63 6f 6e 74 72 6f 6c 6c 65 72 2e   rc="/controller.
+02f0  70 68 70 3f 75 72 6c 3d 78 78 78 78 78 78 78 78   php?url=xxxxxxxx
+0300  78 78 6e 6f 74 68 65 72 65 2e 63 6f 6d 26 72 65   xxnothere.com&re
+0310  66 3d 22 20 77 69 64 74 68 3d 22 31 30 30 25 22   f=" width="100%"
+0320  20 68 65 69 67 68 74 3d 22 31 30 30 25 22 3e 3c    height="100%"><
+0330  2f 69 66 72 61 6d 65 3e 0a 09 09 3c 2f 6e 6f 73   /iframe>...</nos
+0340  63 72 69 70 74 3e 0a 09 3c 2f 62 6f 64 79 3e 0a   cript>..</body>.
+0350  3c 2f 68 74 6d 6c 3e 0a                           </html>.
+
+Reassembled TCP (2258 bytes):
+
+0000  48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d   HTTP/1.1 200 OK.
+0010  0a 58 2d 50 6f 77 65 72 65 64 2d 42 79 3a 20 50   .X-Powered-By: P
+0020  48 50 2f 35 2e 32 2e 35 0d 0a 43 61 63 68 65 2d   HP/5.2.5..Cache-
+0030  43 6f 6e 74 72 6f 6c 3a 20 6e 6f 2d 63 61 63 68   Control: no-cach
+0040  65 2c 20 6d 75 73 74 2d 72 65 76 61 6c 69 64 61   e, must-revalida
+0050  74 65 0d 0a 45 78 70 69 72 65 73 3a 20 4d 6f 6e   te..Expires: Mon
+0060  2c 20 32 36 20 4a 75 6c 20 31 39 39 37 20 30 35   , 26 Jul 1997 05
+0070  3a 30 30 3a 30 30 20 47 4d 54 0d 0a 43 6f 6e 74   :00:00 GMT..Cont
+0080  65 6e 74 2d 54 79 70 65 3a 20 74 65 78 74 2f 68   ent-Type: text/h
+0090  74 6d 6c 3b 20 63 68 61 72 73 65 74 3d 75 74 66   tml; charset=utf
+00a0  2d 38 0d 0a 50 72 61 67 6d 61 3a 20 6e 6f 2d 63   -8..Pragma: no-c
+00b0  61 63 68 65 0d 0a 43 6f 6e 74 65 6e 74 2d 4c 65   ache..Content-Le
+00c0  6e 67 74 68 3a 20 31 39 37 33 0d 0a 43 6f 6e 6e   ngth: 1973..Conn
+00d0  65 63 74 69 6f 6e 3a 20 63 6c 6f 73 65 0d 0a 44   ection: close..D
+00e0  61 74 65 3a 20 57 65 64 2c 20 32 37 20 46 65 62   ate: Wed, 27 Feb
+00f0  20 32 30 30 38 20 30 30 3a 33 32 3a 34 33 20 47    2008 00:32:43 G
+0100  4d 54 0d 0a 53 65 72 76 65 72 3a 20 4f 70 65 6e   MT..Server: Open
+0110  44 4e 53 20 47 75 69 64 65 0d 0a 0d 0a 3c 68 74   DNS Guide....<ht
+0120  6d 6c 3e 0a 09 3c 68 65 61 64 3e 0a 09 09 3c 74   ml>..<head>...<t
+0130  69 74 6c 65 3e 4f 70 65 6e 44 4e 53 3c 2f 74 69   itle>OpenDNS</ti
+0140  74 6c 65 3e 0a 09 3c 2f 68 65 61 64 3e 0a 0a 09   tle>..</head>...
+0150  3c 62 6f 64 79 20 69 64 3d 22 6d 61 69 6e 62 6f   <body id="mainbo
+0160  64 79 22 20 6f 6e 4c 6f 61 64 3d 22 74 65 73 74   dy" onLoad="test
+0170  66 6f 72 62 61 6e 6e 65 72 28 29 3b 22 20 73 74   forbanner();" st
+0180  79 6c 65 3d 22 6d 61 72 67 69 6e 3a 20 30 70 78   yle="margin: 0px
+0190  3b 22 3e 0a 09 09 3c 73 63 72 69 70 74 20 6c 61   ;">...<script la
+01a0  6e 67 75 61 67 65 3d 22 4a 61 76 61 53 63 72 69   nguage="JavaScri
+01b0  70 74 22 3e 0a 09 09 09 66 75 6e 63 74 69 6f 6e   pt">....function
+01c0  20 74 65 73 74 66 6f 72 62 61 6e 6e 65 72 28 29    testforbanner()
+01d0  20 7b 0a 09 09 09 09 76 61 72 20 77 69 64 74 68    {.....var width
+01e0  3b 0a 09 09 09 09 76 61 72 20 68 65 69 67 68 74   ;.....var height
+01f0  3b 0a 09 09 09 09 76 61 72 20 78 20 3d 20 30 3b   ;.....var x = 0;
+0200  0a 09 09 09 09 76 61 72 20 69 73 62 61 6e 6e 65   .....var isbanne
+0210  72 20 3d 20 66 61 6c 73 65 3b 0a 09 09 09 09 76   r = false;.....v
+0220  61 72 20 62 61 6e 6e 65 72 73 69 7a 65 73 20 3d   ar bannersizes =
+0230  20 6e 65 77 20 41 72 72 61 79 28 31 36 29 0a 09    new Array(16)..
+0240  09 09 09 62 61 6e 6e 65 72 73 69 7a 65 73 5b 30   ...bannersizes[0
+0250  5d 20 3d 20 27 33 30 30 78 32 35 30 27 3b 0a 09   ] = '300x250';..
+0260  09 09 09 62 61 6e 6e 65 72 73 69 7a 65 73 5b 31   ...bannersizes[1
+0270  5d 20 3d 20 27 32 35 30 78 32 35 30 27 3b 0a 09   ] = '250x250';..
+0280  09 09 09 62 61 6e 6e 65 72 73 69 7a 65 73 5b 32   ...bannersizes[2
+0290  5d 20 3d 20 27 32 34 30 78 34 30 30 27 3b 0a 09   ] = '240x400';..
+02a0  09 09 09 62 61 6e 6e 65 72 73 69 7a 65 73 5b 33   ...bannersizes[3
+02b0  5d 20 3d 20 27 33 33 36 78 32 38 30 27 3b 0a 09   ] = '336x280';..
+02c0  09 09 09 62 61 6e 6e 65 72 73 69 7a 65 73 5b 34   ...bannersizes[4
+02d0  5d 20 3d 20 27 31 38 30 78 31 35 30 27 3b 0a 09   ] = '180x150';..
+02e0  09 09 09 62 61 6e 6e 65 72 73 69 7a 65 73 5b 35   ...bannersizes[5
+02f0  5d 20 3d 20 27 34 36 38 78 36 30 27 3b 0a 09 09   ] = '468x60';...
+0300  09 09 62 61 6e 6e 65 72 73 69 7a 65 73 5b 36 5d   ..bannersizes[6]
+0310  20 3d 20 27 32 33 34 78 36 30 27 3b 0a 09 09 09    = '234x60';....
+0320  09 62 61 6e 6e 65 72 73 69 7a 65 73 5b 37 5d 20   .bannersizes[7] 
+0330  3d 20 27 38 38 78 33 31 27 3b 0a 09 09 09 09 62   = '88x31';.....b
+0340  61 6e 6e 65 72 73 69 7a 65 73 5b 38 5d 20 3d 20   annersizes[8] = 
+0350  27 31 32 30 78 39 30 27 3b 0a 09 09 09 09 62 61   '120x90';.....ba
+0360  6e 6e 65 72 73 69 7a 65 73 5b 39 5d 20 3d 20 27   nnersizes[9] = '
+0370  31 32 30 78 36 30 27 3b 0a 09 09 09 09 62 61 6e   120x60';.....ban
+0380  6e 65 72 73 69 7a 65 73 5b 31 30 5d 20 3d 20 27   nersizes[10] = '
+0390  31 32 30 78 32 34 30 27 3b 0a 09 09 09 09 62 61   120x240';.....ba
+03a0  6e 6e 65 72 73 69 7a 65 73 5b 31 31 5d 20 3d 20   nnersizes[11] = 
+03b0  27 31 32 35 78 31 32 35 27 3b 0a 09 09 09 09 62   '125x125';.....b
+03c0  61 6e 6e 65 72 73 69 7a 65 73 5b 31 32 5d 20 3d   annersizes[12] =
+03d0  20 27 37 32 38 78 39 30 27 3b 0a 09 09 09 09 62    '728x90';.....b
+03e0  61 6e 6e 65 72 73 69 7a 65 73 5b 31 33 5d 20 3d   annersizes[13] =
+03f0  20 27 31 36 30 78 36 30 30 27 3b 0a 09 09 09 09    '160x600';.....
+0400  62 61 6e 6e 65 72 73 69 7a 65 73 5b 31 34 5d 20   bannersizes[14] 
+0410  3d 20 27 31 32 30 78 36 30 30 27 3b 0a 09 09 09   = '120x600';....
+0420  09 62 61 6e 6e 65 72 73 69 7a 65 73 5b 31 36 5d   .bannersizes[16]
+0430  20 3d 20 27 33 30 30 78 36 30 30 27 3b 0a 09 09    = '300x600';...
+0440  09 09 62 61 6e 6e 65 72 73 69 7a 65 73 5b 31 37   ..bannersizes[17
+0450  5d 20 3d 20 27 33 30 30 78 31 32 35 27 3b 0a 09   ] = '300x125';..
+0460  09 09 09 62 61 6e 6e 65 72 73 69 7a 65 73 5b 31   ...bannersizes[1
+0470  38 5d 20 3d 20 27 35 33 30 78 33 30 30 27 3b 0a   8] = '530x300';.
+0480  09 09 09 09 62 61 6e 6e 65 72 73 69 7a 65 73 5b   ....bannersizes[
+0490  31 39 5d 20 3d 20 27 31 39 30 78 32 30 30 27 3b   19] = '190x200';
+04a0  0a 09 09 09 09 62 61 6e 6e 65 72 73 69 7a 65 73   .....bannersizes
+04b0  5b 32 30 5d 20 3d 20 27 34 37 30 78 32 35 30 27   [20] = '470x250'
+04c0  3b 0a 09 09 09 09 69 66 28 74 79 70 65 6f 66 28   ;.....if(typeof(
+04d0  77 69 6e 64 6f 77 2e 69 6e 6e 65 72 48 65 69 67   window.innerHeig
+04e0  68 74 29 20 3d 3d 20 27 6e 75 6d 62 65 72 27 29   ht) == 'number')
+04f0  20 7b 0a 09 09 09 09 09 68 65 69 67 68 74 20 3d    {......height =
+0500  20 77 69 6e 64 6f 77 2e 69 6e 6e 65 72 48 65 69    window.innerHei
+0510  67 68 74 3b 0a 09 09 09 09 09 77 69 64 74 68 20   ght;......width 
+0520  3d 20 77 69 6e 64 6f 77 2e 69 6e 6e 65 72 57 69   = window.innerWi
+0530  64 74 68 3b 0a 09 09 09 09 7d 20 65 6c 73 65 20   dth;.....} else 
+0540  69 66 28 74 79 70 65 6f 66 28 64 6f 63 75 6d 65   if(typeof(docume
+0550  6e 74 2e 62 6f 64 79 2e 6f 66 66 73 65 74 48 65   nt.body.offsetHe
+0560  69 67 68 74 29 20 3d 3d 20 27 6e 75 6d 62 65 72   ight) == 'number
+0570  27 29 20 7b 0a 09 09 09 09 09 68 65 69 67 68 74   ') {......height
+0580  20 3d 20 64 6f 63 75 6d 65 6e 74 2e 62 6f 64 79    = document.body
+0590  2e 6f 66 66 73 65 74 48 65 69 67 68 74 3b 0a 09   .offsetHeight;..
+05a0  09 09 09 09 77 69 64 74 68 20 3d 20 64 6f 63 75   ....width = docu
+05b0  6d 65 6e 74 2e 62 6f 64 79 2e 6f 66 66 73 65 74   ment.body.offset
+05c0  57 69 64 74 68 3b 0a 09 09 09 09 7d 3b 0a 09 09   Width;.....};...
+05d0  09 09 66 6f 72 20 28 78 3d 30 3b 20 78 3c 62 61   ..for (x=0; x<ba
+05e0  6e 6e 65 72 73 69 7a 65 73 2e 6c 65 6e 67 74 68   nnersizes.length
+05f0  3b 20 78 2b 2b 29 20 7b 0a 09 09 09 09 09 69 66   ; x++) {......if
+0600  28 62 61 6e 6e 65 72 73 69 7a 65 73 5b 78 5d 20   (bannersizes[x] 
+0610  3d 3d 20 77 69 64 74 68 20 2b 20 27 78 27 20 2b   == width + 'x' +
+0620  20 68 65 69 67 68 74 29 20 7b 0a 09 09 09 09 09    height) {......
+0630  09 69 73 62 61 6e 6e 65 72 20 3d 20 74 72 75 65   .isbanner = true
+0640  3b 0a 09 09 09 09 09 7d 3b 0a 09 09 09 09 7d 3b   ;......};.....};
+0650  0a 09 09 09 09 69 66 28 69 73 62 61 6e 6e 65 72   .....if(isbanner
+0660  20 7c 7c 20 77 69 64 74 68 20 3c 20 31 30 30 20    || width < 100 
+0670  7c 7c 20 68 65 69 67 68 74 20 3c 20 31 30 30 29   || height < 100)
+0680  20 7b 0a 09 09 09 09 09 77 69 6e 64 6f 77 2e 6c    {......window.l
+0690  6f 63 61 74 69 6f 6e 20 3d 20 27 2f 62 27 20 2b   ocation = '/b' +
+06a0  20 27 61 6e 6e 65 72 2e 70 68 70 3f 77 3d 27 20    'anner.php?w=' 
+06b0  2b 20 77 69 64 74 68 20 2b 20 27 26 68 3d 27 20   + width + '&h=' 
+06c0  2b 20 68 65 69 67 68 74 20 2b 20 27 26 64 3d 78   + height + '&d=x
+06d0  78 78 78 78 78 78 78 78 78 6e 6f 74 68 65 72 65   xxxxxxxxxnothere
+06e0  2e 63 6f 6d 26 75 3d 78 78 78 78 78 78 78 78 78   .com&u=xxxxxxxxx
+06f0  78 6e 6f 74 68 65 72 65 2e 63 6f 6d 26 72 3d 27   xnothere.com&r='
+0700  3b 0a 09 09 09 09 7d 20 65 6c 73 65 20 7b 0a 09   ;.....} else {..
+0710  09 09 09 09 76 61 72 20 6d 61 69 6e 62 6f 64 79   ....var mainbody
+0720  20 3d 20 64 6f 63 75 6d 65 6e 74 2e 67 65 74 45    = document.getE
+0730  6c 65 6d 65 6e 74 42 79 49 64 28 27 6d 61 69 6e   lementById('main
+0740  62 6f 64 79 27 29 3b 0a 09 09 09 09 09 6d 61 69   body');......mai
+0750  6e 62 6f 64 79 2e 73 74 79 6c 65 2e 6d 61 72 67   nbody.style.marg
+0760  69 6e 20 3d 20 27 30 70 78 27 3b 0a 09 09 09 09   in = '0px';.....
+0770  09 6d 61 69 6e 62 6f 64 79 2e 73 63 72 6f 6c 6c   .mainbody.scroll
+0780  20 3d 20 27 6e 6f 27 3b 0a 09 09 09 09 09 6d 61    = 'no';......ma
+0790  69 6e 62 6f 64 79 2e 69 6e 6e 65 72 48 54 4d 4c   inbody.innerHTML
+07a0  20 3d 20 27 3c 69 66 72 61 6d 65 20 66 72 61 6d    = '<iframe fram
+07b0  65 62 6f 72 64 65 72 3d 22 30 22 20 73 72 63 3d   eborder="0" src=
+07c0  22 2f 63 6f 6e 74 72 6f 6c 6c 65 72 2e 70 68 70   "/controller.php
+07d0  3f 75 72 6c 3d 78 78 78 78 78 78 78 78 78 78 6e   ?url=xxxxxxxxxxn
+07e0  6f 74 68 65 72 65 2e 63 6f 6d 26 72 65 66 3d 22   othere.com&ref="
+07f0  20 77 69 64 74 68 3d 22 31 30 30 25 22 20 68 65    width="100%" he
+0800  69 67 68 74 3d 22 31 30 30 25 22 3e 3c 2f 69 66   ight="100%"></if
+0810  72 61 6d 65 3e 27 3b 0a 09 09 09 09 7d 3b 0a 09   rame>';.....};..
+0820  09 09 7d 3b 0a 09 09 3c 2f 73 63 72 69 70 74 3e   ..};...</script>
+0830  0a 09 09 3c 6e 6f 73 63 72 69 70 74 3e 0a 09 09   ...<noscript>...
+0840  09 3c 69 66 72 61 6d 65 20 66 72 61 6d 65 62 6f   .<iframe framebo
+0850  72 64 65 72 3d 22 30 22 20 73 72 63 3d 22 2f 63   rder="0" src="/c
+0860  6f 6e 74 72 6f 6c 6c 65 72 2e 70 68 70 3f 75 72   ontroller.php?ur
+0870  6c 3d 78 78 78 78 78 78 78 78 78 78 6e 6f 74 68   l=xxxxxxxxxxnoth
+0880  65 72 65 2e 63 6f 6d 26 72 65 66 3d 22 20 77 69   ere.com&ref=" wi
+0890  64 74 68 3d 22 31 30 30 25 22 20 68 65 69 67 68   dth="100%" heigh
+08a0  74 3d 22 31 30 30 25 22 3e 3c 2f 69 66 72 61 6d   t="100%"></ifram
+08b0  65 3e 0a 09 09 3c 2f 6e 6f 73 63 72 69 70 74 3e   e>...</noscript>
+08c0  0a 09 3c 2f 62 6f 64 79 3e 0a 3c 2f 68 74 6d 6c   ..</body>.</html
+08d0  3e 0a                                             >.

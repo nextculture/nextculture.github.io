@@ -1,0 +1,283 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
+
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+theme                  : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "air" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+locale                   : "ko-KR"
+title                    : "Nextculture"
+title_separator          : "-"
+subtitle                 : # site tagline that appears below site title in masthead
+name                     : # ""
+description              : # ""
+url                      : "https://nextculture.kr" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+enforce_ssl              : "https://nextculture.kr"
+# baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : # "" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+# teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : # "/public/logo-88x88.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+breadcrumbs              : # true, false (default)
+words_per_minute         : 200
+comments:
+  provider               : # "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+search                   : # true # true, false (default)
+search_full_content      : # true # true, false (default)
+search_provider          : # "google" # lunr (default), algolia, google
+google:
+  search_engine_id       : # "009988302234930341981:0thih2vpijw" # https://cse.google.com/
+  instant_search         : # false (default), true
+# SEO Related
+google_site_verification : # "0zKuGt2hC1SFUVt9rmmeDHiUnoN3rVnfOvrc5gUsO7k"
+bing_site_verification   : # "7FC72B4F92E9B0B16A5E0E714E4E3497"
+yandex_site_verification :
+naver_site_verification  :
+
+# Social Sharing
+twitter:
+  username               : #
+facebook:
+  username               : #
+og_image                 : # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : "Steven Smethurst" # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+    # - "https://twitter.com/funvill"
+    # - "https://facebook.com/funvill"
+    # - "https://github.com/funvill"
+    # - "https://instagram.com/funvill"
+
+# Analytics
+analytics:
+  provider               : # "custom" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : # "UA-301766-4"
+    anonymize_ip         : # true, false (default)
+
+
+# Site Author
+author:
+  name             : "Nextculture"
+  avatar           : "/public/uploads/bio-photo.jpg" # path of avatar image, e.g. "/public/uploads/bio-photo.jpg"
+  bio              : # "Steven Smethurst is a Vancouver based <em>Maker</em>, <em>Hacker</em>, <em>Coder</em>, <em>Artist</em>, and all around <em>great guy!</em>"
+  location         : # "Vancouver, BC"
+  email            : 
+  links:
+    # - label: "Instagram"
+      # url: "https://instagram.com/funvill"
+      # icon: "fab fa-fw fa-instagram"
+    # - label: "Twitter"
+      # url: "https://twitter.com/funvill"
+      # icon: "fab fa-fw fa-twitter"
+    # - label: "GitHub"
+      # url: "https://github.com/funvill"
+      # icon: "fab fa-fw fa-github"
+    # - label: "Reddit"
+      # url: "http://www.reddit.com/user/funvill/"
+      # icon: "fab fa-fw fa-reddit"
+
+
+
+# Site Footer
+footer:
+  links:
+    # - label: "Twitter"
+      # url: "https://twitter.com/funvill"
+      # icon: "fab fa-fw fa-twitter"
+    # - label: "Instagram"
+      # url: "https://instagram.com/funvill"
+      # icon: "fab fa-fw fa-instagram"
+    # - label: "GitHub"
+      # url: "https://github.com/funvill"
+      # icon: "fab fa-fw fa-github"
+    # - label: "StackOverflow"
+      # url: "http://stackoverflow.com/users/58456/steven-smethurst"
+      # icon: "fab fa-fw fa-stack-overflow"
+    # - label: "Facebook"
+      # url: "https://www.facebook.com/funvill"
+      # icon: "fab fa-fw fa-facebook"
+    # - label: "Linkedin"
+      # url: "https://ca.linkedin.com/pub/steven-smethurst/20/43/899"
+      # icon: "fab fa-fw fa-linkedin"
+    # - label: "Youtube"
+      # url: "https://www.youtube.com/user/funvill"
+      # icon: "fab fa-fw fa-youtube"
+    # - label: "Steamcommunity"
+      # url: "http://steamcommunity.com/id/funvill/"
+      # icon: "fab fa-fw fa-steam"
+    # - label: "Last.fm"
+      # url: "http://www.last.fm/user/funvill"
+      # icon: "fab fa-fw fa-lastfm"
+    # - label: "Reddit"
+      # url: "http://www.reddit.com/user/funvill/"
+      # icon: "fab fa-fw fa-reddit"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+
+# Outputting
+permalink: /:title/
+paginate: 10 # amount of posts to show
+paginate_path: /page:num/
+timezone: "America/Vancouver" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+#  - jemoji
+  - jekyll-include-cache
+  
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+#  - jemoji
+  - jekyll-include-cache
+
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path>/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# github: [metadata]
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      classes: wide
+      author_profile: true
+      read_time: true
+      comments: true # true
+      share: true
+      related: false
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      classes: wide
+      author_profile: true
+      share: true

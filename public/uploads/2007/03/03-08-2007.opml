@@ -1,0 +1,59 @@
+<opml version="1.1">
+  <head>
+    <title>FeedDemon Subscriptions</title>
+    <dateModified>Thu, 08 Mar 2007 19:21:51 GMT</dateModified>
+  </head>
+  <body>
+    <outline text="MAKE Magazine" title="MAKE Magazine" type="rss" xmlUrl="http://makezine.com/blog/feed" htmlUrl="http://www.makezine.com/blog/"/>
+    <outline text="Warrenellis.com" title="Warrenellis.com" type="rss" xmlUrl="http://feeds.feedburner.com/Warrenelliscom" htmlUrl="http://www.warrenellis.com"/>
+    <outline text="Daily DIY" title="Daily DIY" type="rss" xmlUrl="http://dailydiy.com/feed/atom/" htmlUrl="http://dailydiy.com"/>
+    <outline text="Future Feeder" title="Future Feeder" type="rss" xmlUrl="http://feeds.feedburner.com/FutureFeeder" htmlUrl="http://futurefeeder.com"/>
+    <outline text="Other">
+      <outline text="Fresh Fodder &lt;$10" title="Fresh Fodder &lt;$10" type="rss" xmlUrl="http://feeds.feedburner.com/FreshFodder?format=xml" htmlUrl="http://freshfodder.wordpress.com"/>
+      <outline text="Lifehacker" title="Lifehacker" type="rss" xmlUrl="http://feeds.gawker.com/lifehacker/full" htmlUrl="http://www.lifehacker.com"/>
+      <outline text="A List Apart" title="A List Apart" type="rss" xmlUrl="http://www.alistapart.com/rss.xml" htmlUrl="http://www.alistapart.com/"/>
+      <outline text="Boing Boing" title="Boing Boing" type="rss" xmlUrl="http://boingboing.net/rss.xml" htmlUrl="http://www.boingboing.net/"/>
+      <outline text="DESIGNSPOTTER" title="DESIGNSPOTTER" type="rss" xmlUrl="http://www.designspotter.com/index.rdf" htmlUrl="http://www.designspotter.com/"/>
+      <outline text="The Old New Thing" title="The Old New Thing" type="rss" xmlUrl="http://blogs.msdn.com/oldnewthing/rss.xml"/>
+      <outline text="Damn Interesting" title="Damn Interesting" type="rss" xmlUrl="http://www.damninteresting.com/?feed=rss2" htmlUrl="http://www.damninteresting.com"/>
+      <outline text="digg" title="digg" type="rss" xmlUrl="http://digg.com/rss/index.xml" htmlUrl="http://digg.com/" description="digg"/>
+      <outline text="Make - All Discussions" title="Make - All Discussions" type="rss" xmlUrl="http://forums.makezine.com/?page=2&amp;Feed=RSS2" htmlUrl="http://forums.makezine.com/"/>
+      <outline text="Daily Blog Tips" title="Daily Blog Tips" type="rss" xmlUrl="http://feeds.feedburner.com/DailyBlogTips" htmlUrl="http://www.dailyblogtips.com"/>
+      <outline text="IGDA - Vancouver Chapter" title="IGDA - Vancouver Chapter" type="rss" xmlUrl="http://www.igda.org/vancouver/index.xml" htmlUrl="http://www.igda.org/vancouver/"/>
+    </outline>
+    <outline text="Funny">
+      <outline text="JokesAreAwesome.com Random Joke" title="JokesAreAwesome.com Random Joke" type="rss" xmlUrl="http://www.jokesareawesome.com/rss/random/" htmlUrl="http://jokesareawesome.com/rss/randomjoke"/>
+      <outline text="xkcd.com" title="xkcd.com" type="rss" xmlUrl="http://xkcd.com/rss.xml" htmlUrl="http://www.xkcd.com"/>
+      <outline text="SinFest" title="SinFest" type="rss" xmlUrl="http://community.livejournal.com/sinfest_mod/data/rss" htmlUrl="http://community.livejournal.com/sinfest_mod/"/>
+      <outline text="Overheard in the Office" title="Overheard in the Office" type="rss" xmlUrl="http://www.overheardintheoffice.com/index.xml" htmlUrl="http://www.overheardintheoffice.com/"/>
+      <outline text="JokesAreAwesome.com 25 Top Rated Jokes" title="JokesAreAwesome.com 25 Top Rated Jokes" type="rss" xmlUrl="http://www.jokesareawesome.com/rss/toprated/25/" htmlUrl="http://jokesareawesome.com/rss/toprated/25"/>
+      <outline text="Dilbert" title="Dilbert" type="rss" xmlUrl="http://feeds.feedburner.com/tapestrydilbert" htmlUrl="http://www.dilbert.com/"/>
+      <outline text="Joke of the day" title="Joke of the day" type="rss" xmlUrl="http://www.platinum-celebs.com/jokes/index.rdf" htmlUrl="http://www.platinum-celebs.com/jokes/"/>
+    </outline>
+    <outline text="Vancouver">
+      <outline text="Vancouver" title="Vancouver" type="rss" xmlUrl="http://community.livejournal.com/vancouver/data/rss" htmlUrl="http://community.livejournal.com/vancouver/"/>
+      <outline text="Vancouver Group - Upcoming.org" title="Vancouver Group - Upcoming.org" type="rss" xmlUrl="http://upcoming.org/syndicate/v2/group/2165/37fd207343/" htmlUrl="http://upcoming.org/group/2165/"/>
+      <outline text="Vancouver.abluestar.com" title="Vancouver.abluestar.com" type="rss" xmlUrl="http://vancouver.abluestar.com/feed/" htmlUrl="http://vancouver.abluestar.com"/>
+      <outline text="The Vancouverite" title="The Vancouverite" type="rss" xmlUrl="http://www.thevancouverite.com/atom.xml" htmlUrl="http://www.thevancouverite.com/"/>
+      <outline text="Upcoming.org: Vancouver Events" title="Upcoming.org: Vancouver Events" type="rss" xmlUrl="http://upcoming.org/syndicate/v2/metro/14" htmlUrl="http://upcoming.org/metro/ca/bc/van/"/>
+      <outline text="Beyond Robson" title="Beyond Robson" type="rss" xmlUrl="http://www.beyondrobson.com/index.xml" htmlUrl="http://www.beyondrobson.com/"/>
+      <outline text="Overheard in Vancouver" title="Overheard in Vancouver" type="rss" xmlUrl="http://feeds.feedburner.com/Overheardinvancouver" htmlUrl="http://www.overheardinvancouver.ca"/>
+      <outline text="VanEats" title="VanEats" type="rss" xmlUrl="http://www.vaneats.com/xml/rss.xml" htmlUrl="http://www.vaneats.com/"/>
+      <outline text="Meetin.org Events - Vancouver" title="Meetin.org Events - Vancouver" type="rss" xmlUrl="http://www.meetin.org/city/MEETinVANCOUVER/rss.cfm?DateCreated=Yes" htmlUrl="http://www.meetin.org/city/MEETinVANCOUVER/Events.cfm"/>
+    </outline>
+    <outline text="Friends">
+      <outline text="Fat Andy's Sad Sad Journal" title="Fat Andy's Sad Sad Journal" type="rss" xmlUrl="http://rustyironboy.livejournal.com/data/rss?auth=digest" htmlUrl="http://rustyironboy.livejournal.com/"/>
+      <outline text="the_naiad_muse" title="the_naiad_muse" type="rss" xmlUrl="http://thenaiadmuse.livejournal.com/data/rss?auth=digest" htmlUrl="http://thenaiadmuse.livejournal.com/"/>
+      <outline text="BIGUME" title="BIGUME" type="rss" xmlUrl="http://bigham.livejournal.com/data/rss?auth=digest" htmlUrl="http://bigham.livejournal.com/"/>
+      <outline text="Red-dragn" title="Red-dragn" type="rss" xmlUrl="http://red-dragn.livejournal.com/data/rss?auth=digest" htmlUrl="http://red-dragn.livejournal.com/"/>
+      <outline text="Camilla d'errico" title="Camilla d'errico" type="rss" xmlUrl="http://feeds.feedburner.com/CamillaDerrico" htmlUrl="http://www.camilladerrico.com/"/>
+      <outline text="End Goblin Genocide" title="End Goblin Genocide" type="rss" xmlUrl="http://funvill.livejournal.com/data/rss?auth=digest" htmlUrl="http://funvill.livejournal.com/"/>
+      <outline text="Blogging at Life" title="Blogging at Life" type="rss" xmlUrl="http://www.rulingatlife.com/blog/?feed=rss2" htmlUrl="http://www.rulingatlife.com/blog" description="Just another WordPress weblog"/>
+      <outline text="ABlueStar" title="ABlueStar" type="rss" xmlUrl="http://feeds.feedburner.com/Abluestar" htmlUrl="http://www.abluestar.com/blog"/>
+      <outline text="ill-esha" title="ill-esha" type="rss" xmlUrl="http://ill-esha.livejournal.com/data/rss?auth=digest" htmlUrl="http://ill-esha.livejournal.com/"/>
+    </outline>
+    <outline text="music">
+      <outline text="aurgasm" title="aurgasm" type="rss" xmlUrl="http://feeds.feedburner.com/aurgasm" htmlUrl="http://aurgasm.us"/>
+    </outline>
+  </body>
+</opml>

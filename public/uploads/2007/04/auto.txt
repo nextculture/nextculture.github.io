@@ -1,0 +1,102 @@
+<?php
+// Solution to problem found here 
+// http://www.flashnifties.com/support/viewtopic.php?pid=606#p606
+
+/** 
+ * $file_dir        // change this to a folder name
+ * $show_titles     // change to false if you don't want to see the captions
+ * $omit_chars      // how many characters to cut off the title's front
+ * $link_to_image   // do you want to display links?
+ */
+function PrintImages( $file_dir, $show_titles=FALSE, $omit_chars=0, $link_to_image=FALSE ) {
+    $dir=opendir($file_dir);
+    $xml_string= array();
+    while ($file=readdir($dir))
+    {
+        if(substr($file, -3) == "jpg" || substr($file, -4) == "jpeg" ){
+        $tmp_str = '<image img="'.$file_dir.'/'.$file.'" ';
+        if($show_titles){
+            $file_title=substr($file, $omit_chars, strpos($file, ".")-$omit_chars);
+            $tmp_str .= 'caption="'.$file_title.'" ';
+            
+        }
+        
+        if($link_to_image){
+            $link_title=substr($file, $omit_chars, strpos($file, ".")-$omit_chars);
+            $tmp_str .= 'link="'.$file_dir.'/'.$file.'" target="_blank"';
+            
+        }
+            $tmp_str .=" />";
+            array_push($xml_string, $tmp_str);
+        }
+    }
+    sort($xml_string);
+    for($i=0; $i<count($xml_string); $i++){
+    print $xml_string[$i];
+    }
+    closedir($dir);
+}
+
+
+
+print '<?xml version="1.0" encoding="iso-8859-1"?>
+	<slideshow  displayTime="5" 
+				transitionSpeed=".7"
+				transitionType="Fade"
+				motionType="None"
+				motionEasing="easeInOut"
+				randomize="false"
+				slideshowWidth="435"
+				slideshowHeight="300"
+				slideshowX="center"
+				slideshowY="0"
+				bgColor="000"
+				bgOpacity="100"
+				useHtml="true"
+				showHideCaption="true"
+				captionBg="000000"
+				captionBgOpacity="40"
+				captionTextSize="11"
+				captionTextColor="FFFFFF"
+				captionBold="false"
+				captionPadding="7"
+				showNav="false"
+				autoHideNav="true"
+				navHiddenOpacity="15"
+				navX="center"
+				navY="center"
+				btnColor="FFCC00"
+				btnHoverColor="ffffff"
+				btnShadowOpacity="70"
+				btnGradientOpacity="20"
+				btnScale="120"
+				btnSpace="10"
+				navBgColor="333333"
+				navBgAlpha="95"
+				navCornerRadius="20"
+				navBorderWidth="2"
+				navBorderColor="FFFFFF"
+				navBorderAlpha="100"
+				navPadding="10"
+				tooltipSize="8"
+				tooltipColor="000000"
+				tooltipBold="true"
+				tooltipFill="FFFFFF"
+				tooltipStrokeColor="000000"
+				tooltipFillAlpha="80"
+				tooltipStroke="0"
+				tooltipStrokeAlpha="0"
+				tooltipCornerRadius="8"
+				loaderWidth="200"
+				loaderHeight="1"
+				loaderColor="FF0000"
+				loaderOpacity="100" 
+				>';
+				
+    PrintImages( "art" ); 
+    PrintImages( "art/two" ); 
+
+print '</slideshow>';
+?>
+				
+	
