@@ -3,17 +3,19 @@
    ========================================================================== */
 
 .archive {
+  width: 100%;
+  
   margin-top: 1em;
   margin-bottom: 2em;
 
   @include breakpoint($large) {
     float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
+    /*width: calc(100% - #{$right-sidebar-width-narrow});*/
     padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
+    /*width: calc(100% - #{$right-sidebar-width});*/
     padding-right: $right-sidebar-width;
   }
 }
@@ -57,6 +59,10 @@
     top: 0;
     right: 0;
     bottom: 0;
+  }
+
+  a:hover {
+    color: #0092ca;
   }
 
   a + a {

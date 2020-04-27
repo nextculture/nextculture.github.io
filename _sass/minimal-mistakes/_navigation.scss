@@ -197,6 +197,10 @@
     &.site-title {
       margin-left: 0;
     }
+
+    &.site-title:hover {
+      color: #0092ca;
+    }
   }
 
   &__toggle {

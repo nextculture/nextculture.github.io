@@ -59,7 +59,7 @@ og_image                 : # Open Graph/Twitter default site image
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
-  name                   : "Steven Smethurst" # If the user or organization name differs from the site's name
+  name                   : # "Steven Smethurst" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     # - "https://twitter.com/funvill"
     # - "https://facebook.com/funvill"
@@ -267,7 +267,7 @@ defaults:
     values:
       layout: single
       classes: wide
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true # true
       share: true
@@ -279,5 +279,5 @@ defaults:
     values:
       layout: single
       classes: wide
-      author_profile: true
+      author_profile: false
       share: true

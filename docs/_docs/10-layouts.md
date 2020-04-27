@@ -536,7 +536,7 @@ defaults:
       path: ""
       type: posts
     values:
-      author_profile: true
+      author_profile: false
 ```
 
 **Note:** To disable the author sidebar profile for a specific post or page, add `author_profile: false` to the YAML Front Matter instead.

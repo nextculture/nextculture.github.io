@@ -878,7 +878,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       share: true
@@ -1043,7 +1043,7 @@ defaults:
       path: ""
       type: tag
     values:
-      author_profile: true
+      author_profile: false
   - scope:
       path: ""
       type: category
