@@ -1,4 +1,10 @@
-# CODE CONVENTION
+---
+layout: single
+title: Nextculture 코드 컨벤션
+excerpt: 유지보수와 협업을 진행할 때 편의를 위해서 사내 코드 컨벤션 규칙을 정의해보았습니다.
+categories: java
+tags: spring java convention
+---
 
 # CRUD 이름에 대한 고찰
 > 조회를 담당하는 메서드를 제작한다고 했을 때만 하더라도 사람마다 사용하는 메서드 이름이 다르다.  

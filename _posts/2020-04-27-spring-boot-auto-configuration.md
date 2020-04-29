@@ -1,11 +1,10 @@
 ---
 layout: single
 title: 나만의 자동 configuration 만들기
-excerpt: github pages 를 활용해서 기술 blog 를 시작해보자.
-categories: blog
-tags: github github-pages
+excerpt: 프로젝트를 사용하다보면 반복적인 코드를 줄이기 위해서 모듈화를 진행할 때가 있다. 다른 프로젝트에서 같은 모듈을 쓰더라고 다른 설정을 가지고 싶을 때 활용할 수 있는 기능이다.
+categories: spring-boot
+tags: spring configuration spring-boot spring-configuration
 ---
-
 
 스프링 프로젝트에 여러 starter 들이 있는데 내가 직접 starter를 만들기 위해 어떻게 해야 하는지 알아보자.
 
