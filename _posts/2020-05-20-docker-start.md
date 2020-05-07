@@ -97,14 +97,16 @@ tags: docker
 > 컨테이너가 실행될때까지 아무것도 못하고 실행되는 로그를 바라봐야 한다.
 > 
 > <video id="docker-run-without-detach" controls="true">
->   <source type="video/mp4" src="../public/uploads/2020-05-20-docker-start/001.mp4"></source>
+>   <source type="video/mp4" src="https://youtu.be/H_HCvY3xpmw?list=PLOQOA37IEyTTDLZ2yA4HsOXDBQvL6Hw97"></source>
 > </video>
 > 
 > ***-d 옵션을 사용하지 않은 모습***  
-> 영상은 10배속으로 편집한 모습이다.
+> 영상은 10배속으로 편집한 모습이다.  
+> 실제로는 20분이 넘게 지속되다가 이정도면 충분하다고 생각되어 중단했다.  
+> 다시 말하지만 중.단.했다.
 > 
 > <video id="docker-run-width-detach" controls="true">
->   <source type="video/mp4" src="../public/uploads/2020-05-20-docker-start/002.mp4"></source>
+>   <source type="video/mp4" src="https://youtu.be/tILPJPkcteU?list=PLOQOA37IEyTTDLZ2yA4HsOXDBQvL6Hw97"></source>
 > </video>
 > 
 > ***-d 옵션을 사용한 모습***  
