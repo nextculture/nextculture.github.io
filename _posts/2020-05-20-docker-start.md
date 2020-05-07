@@ -97,14 +97,14 @@ tags: docker
 > 컨테이너가 실행될때까지 아무것도 못하고 실행되는 로그를 바라봐야 한다.
 > { % youtube https://www.youtube.com/watch?v=G33WiEktUo8 % }
 >
-> <iframe width="100%" src="https://www.youtube.com/embed/H_HCvY3xpmw?list=PLOQOA37IEyTTDLZ2yA4HsOXDBQvL6Hw97" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> <iframe width="100%" height="80vw" src="https://www.youtube.com/embed/H_HCvY3xpmw?list=PLOQOA37IEyTTDLZ2yA4HsOXDBQvL6Hw97" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-height: 720px;"></iframe>
 > 
 > ***-d 옵션을 사용하지 않은 모습***  
 > 영상은 10배속으로 편집한 모습이다.  
 > 실제로는 20분이 넘게 지속되다가 이정도면 충분하다고 생각되어 중단했다.  
 > 다시 말하지만 중.단.했다.
 > 
-> <iframe width="100%" src="https://www.youtube.com/embed/tILPJPkcteU?list=PLOQOA37IEyTTDLZ2yA4HsOXDBQvL6Hw97" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> <iframe width="100%" height="80vw" src="https://www.youtube.com/embed/tILPJPkcteU?list=PLOQOA37IEyTTDLZ2yA4HsOXDBQvL6Hw97" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-height: 720px;"></iframe>
 > 
 > ***-d 옵션을 사용한 모습***  
 > 영상은 재생속도를 편집하지 않았다.  
@@ -173,17 +173,5 @@ tags: docker
 ## . 이미지 삭제
 
 <script>
-    function videoScaling() {
-        /*document.querySelector('#docker-run-without-detach').style.width = document.querySelector(".page__content").offsetWidth + 'px';*/
-
-        document.querySelectorAll('iframe').forEach(function(_element) {
-            console.log('Hello World');
-            _element.style.height = (Math.ceil(_element.offsetWidth / 16) * 9) + 'px';
-            _element.parentNode.style.paddingTop = _element.style.height;
-        });
-    }
-
-    window.addEventListener('resize', videoScaling);
-
-    videoScaling();
+    console.log('나도 모름 이제ㅋㅋㅋㅋ');
 </script>
