@@ -95,19 +95,16 @@ tags: docker
 > 컨테이너를 실행하는데 짧은 시간이 걸리면 상관 없지만  
 > 컨테이너를 실행하는데 오랜 시간이 걸릴때 데몬 모드로 실행하지 않으면  
 > 컨테이너가 실행될때까지 아무것도 못하고 실행되는 로그를 바라봐야 한다.
-> 
-> <video id="docker-run-without-detach" controls="true">
->   <source type="video/mp4" src="https://youtu.be/H_HCvY3xpmw?list=PLOQOA37IEyTTDLZ2yA4HsOXDBQvL6Hw97"></source>
-> </video>
+> { % youtube https://www.youtube.com/watch?v=G33WiEktUo8 % }
+>
+> <iframe width="100%" src="https://www.youtube.com/embed/H_HCvY3xpmw?list=PLOQOA37IEyTTDLZ2yA4HsOXDBQvL6Hw97" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 > 
 > ***-d 옵션을 사용하지 않은 모습***  
 > 영상은 10배속으로 편집한 모습이다.  
 > 실제로는 20분이 넘게 지속되다가 이정도면 충분하다고 생각되어 중단했다.  
 > 다시 말하지만 중.단.했다.
 > 
-> <video id="docker-run-width-detach" controls="true">
->   <source type="video/mp4" src="https://youtu.be/tILPJPkcteU?list=PLOQOA37IEyTTDLZ2yA4HsOXDBQvL6Hw97"></source>
-> </video>
+> <iframe width="100%" src="https://www.youtube.com/embed/tILPJPkcteU?list=PLOQOA37IEyTTDLZ2yA4HsOXDBQvL6Hw97" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 > 
 > ***-d 옵션을 사용한 모습***  
 > 영상은 재생속도를 편집하지 않았다.  
@@ -174,13 +171,3 @@ tags: docker
 ## . 컨테이너 삭제
 
 ## . 이미지 삭제
-
-<script>
-    function videoScaling() {
-        document.querySelector('#docker-run-without-detach').style.width = document.querySelector(".page__content").offsetWidth + 'px';
-    }
-
-    window.addEventListener('resize', videoScaling);
-
-    videoScaling();
-</script>
