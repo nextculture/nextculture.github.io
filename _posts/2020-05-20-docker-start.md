@@ -177,6 +177,7 @@ tags: docker
         /*document.querySelector('#docker-run-without-detach').style.width = document.querySelector(".page__content").offsetWidth + 'px';*/
 
         document.querySelectorAll('iframe').forEach(function(_element) {
+            console.log('Hello World');
             _element.style.height = (Math.ceil(_element.offsetWidth / 16) * 9) + 'px';
             _element.parentNode.style.paddingTop = _element.style.height;
         });
