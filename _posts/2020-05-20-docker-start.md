@@ -171,3 +171,17 @@ tags: docker
 ## . 컨테이너 삭제
 
 ## . 이미지 삭제
+
+<script>
+    function videoScaling() {
+        /*document.querySelector('#docker-run-without-detach').style.width = document.querySelector(".page__content").offsetWidth + 'px';*/
+
+        document.querySelectorAll('iframe').forEach(function(_element) {
+            _element.style.height = (Math.ceil(_element.offsetWidth / 16) * 9) + 'px';
+        });
+    }
+
+    window.addEventListener('resize', videoScaling);
+
+    videoScaling();
+</script>
