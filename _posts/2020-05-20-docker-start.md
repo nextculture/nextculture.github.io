@@ -178,6 +178,7 @@ tags: docker
 
         document.querySelectorAll('iframe').forEach(function(_element) {
             _element.style.height = (Math.ceil(_element.offsetWidth / 16) * 9) + 'px';
+            _element.parentNode.style.paddingTop = _element.style.height;
         });
     }
 
