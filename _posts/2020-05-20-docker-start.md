@@ -1,12 +1,11 @@
 ---
 layout: single
-title: Docker 란 무엇인가?
+title: Docker 란 무엇인냐?
 excerpt: 로고가 귀여운게 생존에 어떤 도움이 되는지 확실히 보여주는 도커를 알아보자.
 categories: docker
 tags: docker
 ---
 
-# Docker 란 무엇이냐?
 ![docker logo](../public/uploads/2020-05-20-docker-start/999.gif)
 ## **일단 귀여운 도커의 로고를 보고 넘어가도록 한다.**
 ![docker logo](../public/uploads/2020-05-20-docker-start/000.png)
