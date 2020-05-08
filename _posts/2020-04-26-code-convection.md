@@ -38,8 +38,7 @@ tags: spring java convention
 > 그렇기때문에 이런 경우 CREATE 보다는 ADD 가 더 적합하다고 판단되었다.
 
 
-> ##### 결론이지
-
+> ##### 결론
 > |기능         |PREFIX |
 > |-------------|-------|
 > |등록 및 작성 |CREATE |
