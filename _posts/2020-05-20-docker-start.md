@@ -8,7 +8,7 @@ tags: docker
 
 # Docker 란 무엇이냐?
 ![docker logo](../public/uploads/2020-05-20-docker-start/999.gif)
-## **도커란**
+## **일단 귀여운 도커의 로고를 보고 넘어가도록 한다.**
 ![docker logo](../public/uploads/2020-05-20-docker-start/000.png)
 사실 도커가 같은 방향성을 가진 소프트웨어 중에서  
 정말 로고가 귀여워서 살아 남았다는 농담 섞인 이야기를 자주 들을 수 있다.  
