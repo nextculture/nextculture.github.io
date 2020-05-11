@@ -107,8 +107,8 @@ Auto Scaling 환경 구성 및 다양한 환경 설정 작업은 앞으로 포�
 
 ### 유의 사항
 - AWS Elastic Beanstalk 로 생성한 환경은 AWS 서비스에 각각 등록 됩니다. 예를 들면 EC2 및 ELB 항목에도 자동으로 추가되는데, 절대로 각 서비스로 들어가서 설정을 변경하면 안됩니다. <span style="color:red">Elastic Beanstalk로 생성한 환경은 Elastic Beanstalk 서비스 환경에서만 수정해야 합니다.</span>
-- 프로젝트 port number 설정을 5000으로 설정.
-- 플랫폼 버전은 한번 설정 하면 변경 할 수 없다.
+- 프로젝트 port number 설정을 5000으로 설정 해야 합니다. (기본 포트는 "PORT" 환경 변수를 통해 수정 가능합니다.)
+- 플랫폼 버전은 한번 설정 하면 변경 할 수 없습니다.
 
 
 ### 참조
