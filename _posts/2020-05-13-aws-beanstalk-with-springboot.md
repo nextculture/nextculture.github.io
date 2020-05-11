@@ -10,7 +10,8 @@ AWS Beanstalk는 AWS 의 다양한 서비스를 통합하여 인프라 구성 �
 
 ![aa](../public/uploads/2020-05-13-aws-beanstalk/001.png)
 
-언제나 그렇듯 글자만 읽어보는 것 보다는 직접 해보는게 이해하기 쉽고 빠르죠. AWS도 이걸 알고 있어서 그런지 [beanstalk documentation](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/Welcome.html)을 보면 튜토리얼이 제일 위쪽에 있습니다. 우선 이번 포스팅에선 기본적인 튜토리얼을 따라 해보도록 하죠.
+언제나 그렇듯 글자만 읽어보는 것 보다는 직접 해보는게 이해하기 쉽고 빠르죠.
+AWS도 이걸 알고 있어서 그런지 [AWS Elastic Beanstalk 개발자 가이드](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/Welcome.html) 를 보면 튜토리얼이 제일 위쪽에 있습니다. 우선 이번 포스팅에선 기본적인 튜토리얼을 따라 해보도록 하죠.
 
 documentation은 너무 내용이 길기 때문에 적당히 따라하기 쉽게 만들어 보겠습니다.
 제목에 나와있듯이 저는 자바 개발자이기 때문에 springboot로 만든 웹 서비스를 배포하도록 할 것입니다.
@@ -56,7 +57,6 @@ https://start.spring.io/ 에서 새로운 프로젝트를 만듭니다.
 ![aa](../public/uploads/2020-05-13-aws-beanstalk/007.png)
 
 저는 maven, java 11, 2.2.7, jar 설정으로 생성했습니다. web 의존성도 추가 해줍니다.
-
 프로젝트를 열고 src/main/resources/application.properties 파일에 포트를 수정합니다.
 
 ```
@@ -64,7 +64,7 @@ server.port = 5000
 ```
 
 Elastic Beanstalk는 nginx를 역방향 프록시로 사용하여 애플리케이션을 포트 80의 Elastic Load Balancing 로드 밸런서에 매핑합니다.
-기본적으로 Elastic Beanstalk는 요청을 포트 5000의 애플리케이션에 전달하도록 nginx 프록시를 구성합니다
+기본적으로 Elastic Beanstalk는 요청을 포트 5000의 애플리케이션에 전달하도록 nginx 프록시를 구성합니다.
 
 
 이제 "hello aws beanstalk" 문자를 반환하는 controller를 하나 만들어 줍니다.
