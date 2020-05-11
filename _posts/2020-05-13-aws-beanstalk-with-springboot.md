@@ -1,3 +1,11 @@
+---
+layout: single
+title: AWS Elastic Beanstalk with Springboot
+excerpt: AWS Elastic Beanstalk 를 사용하여 Springboot application 을 배포해보자.
+categories: aws
+tags: aws beanstalk
+---
+
 AWS Beanstalk는 AWS 의 다양한 서비스를 통합하여 인프라 구성 및 배포까지 자동으로 해주는 서비스입니다. 너무 간단한가요?<br>
 
 배포를 자동으로 해준다는 것은 우리가 개발 할 때 비즈니스 로직에 집중 할 수 있는 시간이 늘어난다는 뜻일겁니다.<br>
