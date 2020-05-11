@@ -1,6 +1,3 @@
-# AWS Beanstalk with Springboot
-
-# AWS BeansTalk 란?
 AWS Beanstalk는 AWS 의 다양한 서비스를 통합하여 인프라 구성 및 배포까지 자동으로 해주는 서비스입니다. 너무 간단한가요?
 
 배포를 자동으로 해준다는 것은 우리가 개발 할 때 비즈니스 로직에 집중 할 수 있는 시간이 늘어난다는 뜻일겁니다.
@@ -115,7 +112,7 @@ Auto Scaling 환경 구성 및 다양한 환경 설정 작업은 앞으로 포�
 
 
 ### 참조
-- AWS Elastic Beanstalk 개발자 가이드 : https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/Welcome.html
+- [AWS Elastic Beanstalk 개발자 가이드](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/Welcome.html)
 
 
 
