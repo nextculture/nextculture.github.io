@@ -18,8 +18,9 @@ AWS Beanstalk는 AWS 의 다양한 서비스를 통합하여 인프라 구성 �
 
 ![aa](../public/uploads/2020-05-13-aws-beanstalk/001.png)
 
-언제나 그렇듯 글자만 읽어보는 것 보다는 직접 해보는게 이해하기 쉽고 빠르죠.<br>
-AWS도 이걸 알고 있어서 그런지 [AWS Elastic Beanstalk 개발자 가이드](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/Welcome.html) 를 보면 튜토리얼이 제일 위쪽에 있습니다. 우선 이번 포스팅에선 기본적인 튜토리얼을 따라 해보도록 하죠.
+언제나 그렇듯 글자만 읽어보는 것 보다는 직접 해보는게 이해하기 쉽고 빠릅니다.<br>
+[AWS Elastic Beanstalk 개발자 가이드](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/Welcome.html) 를 보아도 튜토리얼이 제일 위쪽에 있는 것을 볼 수 있습니다.<br>
+그러므로 이번 포스팅에선 기본적인 튜토리얼을 따라 해보도록 하겠습니다.
 
 documentation은 너무 내용이 길기 때문에 적당히 따라하기 쉽게 만들어 보겠습니다.<br>
 제목에 나와있듯이 저는 자바 개발자이기 때문에 springboot로 만든 웹 서비스를 배포하도록 할 것입니다.<br>
