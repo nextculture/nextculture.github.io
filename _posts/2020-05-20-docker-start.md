@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Docker 란 무엇인냐?
+title: Docker 란 무엇인가?
 excerpt: 로고가 귀여운게 생존에 어떤 도움이 되는지 확실히 보여주는 도커를 알아보자.
 categories: docker
 tags: docker
