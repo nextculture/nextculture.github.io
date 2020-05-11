@@ -82,7 +82,7 @@ public class HelloController {
 
 그리고 maven 패키징 합니다.
 
-```shell script
+```
 mvn install
 ```
 
